@@ -1,0 +1,100 @@
+.map{
+    z-index: 2;
+    position: relative;
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    .container{
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        flex: 1 1 100%;
+        min-height: 575px;
+    }
+    &_header{
+        position: relative;
+        z-index: 1;
+        &::before{
+            content: '“Все, что нужно знать о майнинге биткоина”';
+            white-space: nowrap;
+            position: absolute;
+            top: 0;
+            left: -12px;
+            height: 100%;
+            width: 106px;
+            background-color: $primary-color;
+            color: $white;
+            overflow: hidden;
+            text-indent: 12px;
+        }
+    }
+    &_windrose{
+        position: absolute;
+        bottom: -36px;
+        left: 6px;
+        transform: translateX(-100%);
+    }
+    &_miner{
+        position: absolute;
+        bottom: 0;
+        right: -97px;
+        z-index: 3;
+        &_g{
+            cursor: pointer;
+        }
+    }
+    &_container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            margin-left: -40px;
+            height: 100%;
+        }
+    }
+    &_points{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-left: -20px;
+        z-index: 2;
+        fill: #7F7550;
+        // &--seven{
+        //     fill: red;
+        //     left: auto;
+        //     top: auto;
+        //     // transform: translate(100%, 0%);
+        //     width: 24.4645%;
+        //     height: 51%;
+        //     right: 20px;
+        //     bottom: 0;
+        //     // width: auto;
+        //     // height: auto;
+        //     margin: 0;
+        //     @include breakpoint(1266){
+        //         right: auto;
+        //         left: calc(50% + 373px);
+        //     }
+        //     @media screen and (min-height: 625){
+        //         bottom: auto;
+        //         top: calc(50% + 20px);
+        //     }
+        // }
+    }
+    &_point{
+        transition: fill 300ms;
+        cursor: help;
+        &[aria-expanded="true"], &:hover, &:focus{
+            fill: $primary-color;
+        }
+    }
+}

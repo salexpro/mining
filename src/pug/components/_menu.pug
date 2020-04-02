@@ -1,0 +1,201 @@
+-
+    const menu = [
+        {
+            title: 'В начало',
+            link: '#',
+        },
+        {
+            title: 'Хочу майнить! Первые шаги',
+            link: '#',
+            position: {
+                h: 'right',
+                v: 'top'
+            },
+            offset: {
+                h: 14,
+                v: -27
+            },
+            attrs: {
+                'data-open': 'popup1'
+            },
+            sub: [
+                {
+                    title: 'Что такое майнинг',
+                    link: '#what-is-minig'
+                },
+                {
+                    title: 'Зачем нужен майнинг',
+                    link: '#what-for'
+                },
+                {
+                    title: 'Какие бывают виды майнинга',
+                    link: '#kinds-of-mining'
+                },
+                {
+                    title: 'Как майнят криптовалюты на Proof-of-Work',
+                    link: '#proof-of-work'
+                },
+                {
+                    title: 'Как майнят на Proof-of-Stake',
+                    link: '#proof-of-stake'
+                },
+                {
+                    title: 'На чем майнят криптовалюту',
+                    link: '#how-to-mine'
+                },
+                {
+                    title: 'Где располагаются мировые майнинговые центры',
+                    link: '#where-is-it'
+                }
+            ]
+        },
+        {
+            title: 'Путешествие на майнинг ферму',
+            link: '#',
+        },
+        {
+            title: 'Что майнить: почему<br>майнеры отдают предпочтение биткоину',
+            link: '#',
+            position: {
+                h: 'right',
+                v: 'top'
+            },
+            offset: {
+                h: 14,
+                v: -27
+            },
+            sub: [
+                {
+                    title: 'Об эволюции майнинга биткоина',
+                    link: '#', 
+                },
+                {
+                    title: 'Какими бывают ASIC-майнеры',
+                    link: '#', 
+                },
+                {
+                    title: 'Как начать майнить при помощи ASIC',
+                    link: '#', 
+                },
+                {
+                    title: 'Как увеличить доходность майнинга',
+                    link: '#', 
+                },
+                {
+                    title: 'Почему большинство майнеров предпочитает биткоин',
+                    link: '#', 
+                },
+            ]
+        },
+        {
+            title: 'Выбираем оборудование для майнинга',
+            link: '#',
+        },
+        {
+            title: 'Как купить майнинговое<br>оборудование и где его разместить',
+            link: '#',
+            position: {
+                h: 'left',
+                v: 'top'
+            },
+            offset: {
+                h: 14,
+                v: -27
+            },
+            sub: [
+                {
+                    title: 'О крупнейших производителях оборудования',
+                    link: '#', 
+                },
+                {
+                    title: 'Как заказать оборудование для майнинга и доставить его в Россию',
+                    link: '#', 
+                },
+                {
+                    title: 'Где разместить оборудование для майнинга',
+                    link: '#', 
+                },
+                {
+                    title: 'Что такое прошивка оборудования',
+                    link: '#', 
+                },
+                {
+                    title: 'Как произвести ремонт оборудования',
+                    link: '#', 
+                },
+            ]
+        },
+        {
+            title: 'Карта хостеров и<br>майнинг-отелей',
+            link: '#',
+        },
+        {
+            title: 'Как присоединиться к майнинговому пулу?',
+            link: '#',
+            position: {
+                h: 'left',
+                v: 'top'
+            },
+            offset: {
+                h: 14,
+                v: -27
+            },
+            sub: [
+                {
+                    title: 'О самых крупных майнинговых пулах, и как они образовались',
+                    link: '#', 
+                },
+                {
+                    title: 'На что необходимо обратить внимание при выборе пула',
+                    link: '#', 
+                },
+                {
+                    title: 'Как подключиться к майнинговому пулу',
+                    link: '#', 
+                },
+            ]
+        },
+        {
+            title: 'Финиш! Выводим в фиат,<br>инвестируем, трейдим!',
+            link: '#',
+            position: {
+                h: 'left',
+                v: 'top'
+            },
+            offset: {
+                h: 14,
+                v: -27
+            },
+            sub: [
+                {
+                    title: 'Продаем и выводим в фиат',
+                    link: '#', 
+                },
+                {
+                    title: 'Торгуем',
+                    link: '#', 
+                },
+                {
+                    title: 'Храним',
+                    link: '#', 
+                },
+                {
+                    title: 'Выводы',
+                    link: '#', 
+                },
+            ]
+        },
+    ]
+mixin menu()
+    ul.menu.vertical.accordion-menu&attributes(attributes)
+        each item in menu
+            li
+                a(href=item.link)
+                    !=item.title
+                if item.sub
+                    ul.menu.vertical.nested
+                        each subitem in item.sub
+                            li
+                                a(href=subitem.link)&attributes(item.attrs)
+                                    =subitem.title
+

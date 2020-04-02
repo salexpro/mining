@@ -1,0 +1,77 @@
+.menu{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    li{
+        position: relative;
+        + li{
+            margin-top: 20px;
+        }
+        &.is-accordion-submenu-parent{
+            &::after{
+                content: '';
+                position: absolute;
+                top: 2.5px;
+                right: 0;
+                width: 16px;
+                height: 16px;
+                border-radius: 4px;
+                border: 1px solid $white;
+                z-index: -1;
+            }
+            > a{
+                padding-right: 32px;
+                &::before, &::after{
+                    content: '';
+                    position: absolute;
+                    top: 10.5px;
+                    right: -2px;
+                    width: 10px;
+                    height: 2px;
+                    background-color: $white;
+                    border-radius: 2px;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                    transition: transform 300ms;
+                }
+                &::after{
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+            }
+            &[aria-expanded="true"] > a{
+                &::before{
+                    transform: translate(-50%, -50%) rotate(-180deg);
+                }
+                &::after{
+                    transform: translate(-50%, -50%) rotate(-180deg);
+                }
+            }
+        }
+    }
+    a {
+        padding: 0;
+        color: $white;
+        line-height: normal;
+        
+        &:hover, &:focus{
+            color: $secondary-color;
+            text-decoration: underline;
+        }
+    }
+    &.submenu.is-accordion-submenu{
+        font-size: 14px;
+        font-weight: 500;
+        margin-right: 32px;
+        li{
+            margin-top: 17px;
+        }
+    }
+}
+
+.accordion-menu{
+    > li:not(.is-accordion-submenu-parent) > a{
+        margin-right: 32px;
+    }
+}

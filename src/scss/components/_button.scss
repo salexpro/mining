@@ -1,0 +1,14 @@
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.button{
+    font-weight: 500;
+    &.hollow{
+        &:hover, &:focus{
+            background-color: $primary-color;
+            color: $secondary-color;
+        }
+    }
+}

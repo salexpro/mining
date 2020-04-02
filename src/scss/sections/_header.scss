@@ -1,0 +1,81 @@
+.header{
+    margin-bottom: 15px;
+    &_inner{
+        display: flex;
+        align-items: center;
+        position: relative;
+        min-height: 50px;
+    }
+    &_logo{
+        color: $primary-color;
+        transition: color 300ms;
+        margin-right: auto;
+        z-index: 1;
+        &:hover, &:focus{
+            color: $secondary-color;
+            .header_logo_bg{
+                color: $primary-color;
+            }
+        }
+        &_bg{
+            position: absolute;
+            left: -133px;
+            top: 0;
+            z-index: -1;
+            color: $secondary-color;
+            transition: color 300ms;
+        }
+    }
+    &_social{
+        display: grid;
+        grid-template-columns: repeat(4, 36px);
+        column-gap: 5px;
+        list-style: none;
+        margin: 0;
+        a {
+            display: flex;
+            width: 36px;
+            height: 36px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &_buttons{
+        display: flex;
+        position: relative;
+        padding: 4px 14px;
+        margin: 0 14px;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background-color: $primary-color;
+            border-radius: 2px;
+        }
+        &::before{
+            left: 0;
+        }
+        &::after{
+            right: 0;
+        }
+        .button + .button{
+            margin-left: 5px;
+        }
+    }
+    &_hamb{
+        position: relative;
+        z-index: 14;
+        color: $primary-color;
+        padding: 5px;
+        margin: 0 -5px;
+        background-color: transparent;
+        transition: color 300ms, background-color 200ms 0s;
+        &[aria-expanded="true"]{
+            transition: color 300ms, background-color 300ms 200ms;
+            color: $secondary-color;
+            background: $black;
+        }
+    }
+}

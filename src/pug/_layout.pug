@@ -1,0 +1,25 @@
+block const
+-
+    const title  = `${name ?  `${name} - ` : ''}Майнинг`;
+    const descr  = 'Description';
+    const domain = 'mining.salex.pro'
+
+//- Components
+include components/_icons
+include components/_menu
+
+doctype html
+html(lang="ru")
+    include components/_head
+    body
+        main.off-canvas-content.wrap(data-off-canvas-content)
+            include sections/_header
+            block content
+            include sections/_footer
+            include components/_popup
+        include components/_offcanvas
+        block js
+            //- script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=', crossorigin='anonymous')
+            script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
+            script(src="./js/app.min.js")
