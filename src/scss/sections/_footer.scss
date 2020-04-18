@@ -2,8 +2,22 @@
     height: 80px;
     position: relative;
     z-index: 2;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 102px;
+        height: 343px;
+        background-image: url(../assets/img/island_bottom.png);
+        background-size: contain;
+    }
+    .container{
+        transform: translateY(80px);
+    }
     &_carousel{
         padding: 0 62px;
+        margin: 0;
         &_item{
             width: 180px;
             height: 50px;
@@ -14,6 +28,17 @@
             border: 1px solid #988a5b;
             background-color: $secondary-color;
             margin: auto;
+            &:not(:hover):not(:focus){
+                path{
+                    fill: #757162;
+                    &[fill="#F7931A"]{
+                        fill: #4e4b44;
+                    }
+                }
+            }
+            path{
+                transition: fill 300ms;
+            }
         }
         .owl-item .footer_carousel_item img{
             width: auto;

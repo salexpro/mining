@@ -1,7 +1,7 @@
 block const
 -
-    const title  = `${name ?  `${name} - ` : ''}Майнинг`;
-    const descr  = 'Description';
+    const title  = `${name ?  `${name} - ` : ''}Все, что нужно знать о майнинге биткоина`;
+    const descr  = 'Большой спецпроект ForkLog о майнинге: пошаговая инструкция от точки входа в майнинг до вывода средств. Охота на биткоины начинается!';
     const domain = 'mining.salex.pro'
 
 //- Components
@@ -16,10 +16,23 @@ html(lang="ru")
             include sections/_header
             block content
             include sections/_footer
+            include components/_offcanvas
             include components/_popup
-        include components/_offcanvas
         block js
             //- script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=', crossorigin='anonymous')
             script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js")
             script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
+            script.
+                var player;
+                var tag = document.createElement('script');
+                tag.src = 'https://www.youtube.com/iframe_api';
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                function onYouTubeIframeAPIReady() {
+                    player = new YT.Player('player', {
+                        'showinfo': 0,
+                        'modestbranding': 1
+                    })
+                }
             script(src="./js/app.min.js")

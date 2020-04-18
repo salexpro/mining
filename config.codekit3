@@ -15,7 +15,7 @@
 		"uuidString": "6DF9D747-8413-4879-B214-3F05CAB77409"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "32001",
 "files": {
 	"/.browserslistrc": {
 		"cB": 0,
@@ -196,12 +196,140 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/src/assets/favicon/.gitkeep": {
+	"/src/assets/favicon/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 24313,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 75584,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 17438,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
-		"oAP": "/docs/assets/favicon/.gitkeep",
+		"oAP": "/docs/assets/favicon/browserconfig.xml",
+		"oF": 0
+		},
+	"/src/assets/favicon/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 1251,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 2582,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-144x144.png": {
+		"ft": 32768,
+		"iS": 17256,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/mstile-144x144.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 15650,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-310x150.png": {
+		"ft": 32768,
+		"iS": 16494,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/mstile-310x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-310x310.png": {
+		"ft": 32768,
+		"iS": 37908,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/mstile-310x310.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-70x70.png": {
+		"ft": 32768,
+		"iS": 10591,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/mstile-70x70.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/favicon/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/assets/favicon/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/assets/favicon/site.webmanifest",
 		"oF": 0
 		},
 	"/src/assets/fonts/.gitkeep": {
@@ -280,9 +408,29 @@
 		},
 	"/src/assets/img/bg_logo.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/bg_logo.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/assets/img/fog.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/img/fog.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
+	"/src/assets/img/fog_white.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/img/fog_white.svg",
 		"oF": 0,
 		"opt": 1,
 		"plM": 1103269715967,
@@ -300,7 +448,7 @@
 		},
 	"/src/assets/img/icons/cross.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/icons/cross.svg",
 		"oF": 0,
@@ -310,7 +458,7 @@
 		},
 	"/src/assets/img/icons/fb.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/icons/fb.svg",
 		"oF": 0,
@@ -320,7 +468,7 @@
 		},
 	"/src/assets/img/icons/hamb.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/icons/hamb.svg",
 		"oF": 0,
@@ -330,7 +478,7 @@
 		},
 	"/src/assets/img/icons/tg.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/icons/tg.svg",
 		"oF": 0,
@@ -340,7 +488,7 @@
 		},
 	"/src/assets/img/icons/tw.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/icons/tw.svg",
 		"oF": 0,
@@ -350,7 +498,7 @@
 		},
 	"/src/assets/img/icons/vk.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/icons/vk.svg",
 		"oF": 0,
@@ -358,9 +506,40 @@
 		"plM": 1103269715967,
 		"prP": 0
 		},
+	"/src/assets/img/island_bottom.png": {
+		"ft": 32768,
+		"iS": 10247,
+		"oA": 0,
+		"oAP": "/docs/assets/img/island_bottom.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/island_bottom.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/img/island_bottom.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 65584150609919,
+		"prP": 1
+		},
+	"/src/assets/img/island_top.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/img/island_top.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 3302292971519,
+		"prP": 0
+		},
 	"/src/assets/img/logo.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/logo.svg",
 		"oF": 0,
@@ -370,7 +549,7 @@
 		},
 	"/src/assets/img/map.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/map.svg",
 		"oF": 0,
@@ -388,93 +567,55 @@
 		"plM": 1103269715967,
 		"prP": 0
 		},
-	"/src/assets/img/partners/bitcluster.png": {
-		"ft": 32768,
-		"iS": 4298,
+	"/src/assets/img/partners/bitcluster.svg": {
+		"ft": 2097152,
+		"miP": 1,
 		"oA": 0,
-		"oAP": "/docs/assets/img/partners/bitcluster.png",
+		"oAP": "/docs/assets/img/partners/bitcluster.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"plM": 65841848639487,
+		"prP": 1
 		},
-	"/src/assets/img/partners/bitcluster@2x.png": {
-		"ft": 32768,
-		"iS": 10670,
+	"/src/assets/img/partners/chilkoot.svg": {
+		"ft": 2097152,
+		"miP": 1,
 		"oA": 0,
-		"oAP": "/docs/assets/img/partners/bitcluster@2x.png",
+		"oAP": "/docs/assets/img/partners/chilkoot.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"plM": 65841848639487,
+		"prP": 1
 		},
-	"/src/assets/img/partners/blockchain.png": {
-		"ft": 32768,
-		"iS": 3196,
+	"/src/assets/img/partners/emcd.svg": {
+		"ft": 2097152,
+		"miP": 1,
 		"oA": 0,
-		"oAP": "/docs/assets/img/partners/blockchain.png",
+		"oAP": "/docs/assets/img/partners/emcd.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"plM": 65841848639487,
+		"prP": 1
 		},
-	"/src/assets/img/partners/blockchain@2x.png": {
-		"ft": 32768,
-		"iS": 7266,
+	"/src/assets/img/partners/miningclub.svg": {
+		"ft": 2097152,
+		"miP": 1,
 		"oA": 0,
-		"oAP": "/docs/assets/img/partners/blockchain@2x.png",
+		"oAP": "/docs/assets/img/partners/miningclub.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"plM": 65841848647679,
+		"prP": 1
 		},
-	"/src/assets/img/partners/emcd.png": {
-		"ft": 32768,
-		"iS": 1929,
+	"/src/assets/img/path.svg": {
+		"ft": 2097152,
+		"miP": 1,
 		"oA": 0,
-		"oAP": "/docs/assets/img/partners/emcd.png",
+		"oAP": "/docs/assets/img/path.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/src/assets/img/partners/emcd@2x.png": {
-		"ft": 32768,
-		"iS": 3838,
-		"oA": 0,
-		"oAP": "/docs/assets/img/partners/emcd@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/src/assets/img/partners/miningclub.png": {
-		"ft": 32768,
-		"iS": 3221,
-		"oA": 0,
-		"oAP": "/docs/assets/img/partners/miningclub.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/src/assets/img/partners/miningclub@2x.png": {
-		"ft": 32768,
-		"iS": 4652,
-		"oA": 0,
-		"oAP": "/docs/assets/img/partners/miningclub@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
+		"plM": 1103269715967,
+		"prP": 0
 		},
 	"/src/assets/img/points.svg": {
 		"ft": 2097152,
@@ -488,7 +629,7 @@
 		},
 	"/src/assets/img/popup/armenia.png": {
 		"ft": 32768,
-		"iS": 18730,
+		"iS": 25341,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/armenia.png",
 		"oF": 0,
@@ -499,7 +640,7 @@
 		},
 	"/src/assets/img/popup/armenia@2x.png": {
 		"ft": 32768,
-		"iS": 58671,
+		"iS": 88422,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/armenia@2x.png",
 		"oF": 0,
@@ -574,6 +715,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/popup/graph.png": {
+		"ft": 32768,
+		"iS": 16282,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/graph.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/graph@2x.png": {
+		"ft": 32768,
+		"iS": 38804,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/graph@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/map.png": {
+		"ft": 32768,
+		"iS": 43280,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/map.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/map@2x.png": {
+		"ft": 32768,
+		"iS": 104732,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/map@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/popup/mining.png": {
 		"ft": 32768,
 		"iS": 22946,
@@ -640,6 +825,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/popup/taxes.jpg": {
+		"ft": 16384,
+		"iS": 23658,
+		"jF": 2,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/taxes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/src/assets/img/popup/taxes.png": {
 		"ft": 32768,
 		"iS": 22946,
@@ -649,6 +845,17 @@
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/taxes@2x.jpg": {
+		"ft": 16384,
+		"iS": 83594,
+		"jF": 2,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/taxes@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/src/assets/img/popup/taxes@2x.png": {
@@ -664,7 +871,7 @@
 		},
 	"/src/assets/img/wave.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/wave.svg",
 		"oF": 0,
@@ -674,7 +881,7 @@
 		},
 	"/src/assets/img/windrose.svg": {
 		"ft": 2097152,
-		"miP": 0,
+		"miP": 1,
 		"oA": 0,
 		"oAP": "/docs/assets/img/windrose.svg",
 		"oF": 0,
@@ -690,6 +897,14 @@
 		"oAP": "/docs/CNAME",
 		"oF": 0
 		},
+	"/src/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/favicon.ico",
+		"oF": 0
+		},
 	"/src/js/app.js": {
 		"bF": 4,
 		"ft": 64,
@@ -701,6 +916,102 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/src/js/components/_anim.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/components/_anim.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_carousel.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/components/_carousel.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_countdown.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/components/_countdown.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_miner.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/components/_miner.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_preloader.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/components/_preloader.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_scroll.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/components/_scroll.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_subscribe.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/components/_subscribe.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/components/_video.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/components/_video.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/data/miner.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "/docs/js/data/miner.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 0
+		},
 	"/src/js/lib/foundation-explicit-pieces.js": {
 		"bF": 4,
 		"ft": 64,
@@ -708,6 +1019,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/docs/js/lib/foundation-explicit-pieces.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/src/js/plugins/_DrawSVGPlugin.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/plugins/_DrawSVGPlugin.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -980,9 +1302,9 @@
 	"creationDate": 505831586,
 	"displayValue": "Майнинг",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-doge",
+	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 607526608.680107
+	"lastBuiltDate": 608889744.61128199
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1527,6 +1849,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
+			},
 		"guard-for-in": {
 			"active": 0,
 			"optionString": ""
@@ -1703,6 +2029,10 @@
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-continue": {
 			"active": 0,
 			"optionString": ""
@@ -1728,6 +2058,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -2031,6 +2365,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-setter-return": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
@@ -2234,6 +2572,10 @@
 		"prefer-destructuring": {
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-named-capture-group": {
 			"active": 0,

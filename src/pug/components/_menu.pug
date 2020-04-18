@@ -2,11 +2,14 @@
     const menu = [
         {
             title: 'В начало',
-            link: '#',
+            link: './',
         },
         {
             title: 'Хочу майнить! Первые шаги',
-            link: '#',
+            link: '#what-is-it',
+            attrs: {
+                'data-open': 'what-is-it'
+            },
             position: {
                 h: 'right',
                 v: 'top'
@@ -15,47 +18,68 @@
                 h: 14,
                 v: -27
             },
-            attrs: {
-                'data-open': 'popup1'
-            },
             sub: [
                 {
                     title: 'Что такое майнинг',
-                    link: '#what-is-minig'
+                    link: '#what-is-minig',
+                    attrs: {
+                        'data-open': 'what-is-it',
+                    },
                 },
                 {
                     title: 'Зачем нужен майнинг',
-                    link: '#what-for'
+                    link: '#what-for',
+                    attrs: {
+                        'data-open': 'what-is-it'
+                    },
                 },
                 {
                     title: 'Какие бывают виды майнинга',
-                    link: '#kinds-of-mining'
+                    link: '#kinds-of-mining',
+                    attrs: {
+                        'data-open': 'what-is-it'
+                    },
                 },
                 {
                     title: 'Как майнят криптовалюты на Proof-of-Work',
-                    link: '#proof-of-work'
+                    link: '#proof-of-work',
+                    attrs: {
+                        'data-open': 'what-is-it'
+                    },
                 },
                 {
                     title: 'Как майнят на Proof-of-Stake',
-                    link: '#proof-of-stake'
+                    link: '#proof-of-stake',
+                    attrs: {
+                        'data-open': 'what-is-it'
+                    },
                 },
                 {
                     title: 'На чем майнят криптовалюту',
-                    link: '#how-to-mine'
+                    link: '#how-to-mine',
+                    attrs: {
+                        'data-open': 'what-is-it'
+                    },
                 },
                 {
                     title: 'Где располагаются мировые майнинговые центры',
-                    link: '#where-is-it'
+                    link: '#where-is-it',
+                    attrs: {
+                        'data-open': 'what-is-it'
+                    },
                 }
             ]
         },
         {
             title: 'Путешествие на майнинг ферму',
-            link: '#',
+            link: '#video',
+            attrs: {
+                'data-video': '88aWYwcrfMI'
+            }
         },
         {
             title: 'Что майнить: почему<br>майнеры отдают предпочтение биткоину',
-            link: '#',
+            // link: '#',
             position: {
                 h: 'right',
                 v: 'top'
@@ -89,11 +113,14 @@
         },
         {
             title: 'Выбираем оборудование для майнинга',
-            link: '#',
+            // link: '#video',
+            // attrs: {
+            //     'data-video': 'NNJ9z9JhSKs'
+            // }
         },
         {
             title: 'Как купить майнинговое<br>оборудование и где его разместить',
-            link: '#',
+            // link: '#',
             position: {
                 h: 'left',
                 v: 'top'
@@ -127,11 +154,14 @@
         },
         {
             title: 'Карта хостеров и<br>майнинг-отелей',
-            link: '#',
+            link: '#map',
+            attrs: {
+                'data-open': 'map'
+            }
         },
         {
             title: 'Как присоединиться к майнинговому пулу?',
-            link: '#',
+            // link: '#',
             position: {
                 h: 'left',
                 v: 'top'
@@ -157,7 +187,7 @@
         },
         {
             title: 'Финиш! Выводим в фиат,<br>инвестируем, трейдим!',
-            link: '#',
+            // link: '#',
             position: {
                 h: 'left',
                 v: 'top'
@@ -190,12 +220,12 @@ mixin menu()
     ul.menu.vertical.accordion-menu&attributes(attributes)
         each item in menu
             li
-                a(href=item.link)
+                #{item.link ? 'a' : 'span'}(href=item.link || false)&attributes(!item.sub ? item.attrs : {})
                     !=item.title
                 if item.sub
                     ul.menu.vertical.nested
                         each subitem in item.sub
                             li
-                                a(href=subitem.link)&attributes(item.attrs)
+                                a(href=subitem.link)&attributes(subitem.attrs)
                                     =subitem.title
 

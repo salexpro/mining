@@ -13,20 +13,26 @@
         min-height: 575px;
     }
     &_header{
+        display: inline-block;
         position: relative;
         z-index: 1;
-        &::before{
-            content: '“Все, что нужно знать о майнинге биткоина”';
+        padding-right: 24px;
+        opacity: 0;
+        span {
+            display: block;
             white-space: nowrap;
             position: absolute;
             top: 0;
             left: -12px;
-            height: 100%;
-            width: 106px;
+            height: 0;
+            width: 8px;
             background-color: $primary-color;
             color: $white;
             overflow: hidden;
             text-indent: 12px;
+            &::before{
+                content: attr(data-title);
+            }
         }
     }
     &_windrose{
@@ -34,6 +40,11 @@
         bottom: -36px;
         left: 6px;
         transform: translateX(-100%);
+        &.flip{
+            #arcPath{
+                transform: scale(-1, 1) translate(-100%, 0);
+            }
+        }
     }
     &_miner{
         position: absolute;
@@ -42,6 +53,7 @@
         z-index: 3;
         &_g{
             cursor: pointer;
+            user-select: none;
         }
     }
     &_container{
@@ -54,7 +66,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        img{
+        opacity: 0;
+        visibility: hidden;
+        > img{
             margin-left: -40px;
             height: 100%;
         }
@@ -66,35 +80,85 @@
         left: 0;
         top: 0;
         margin-left: -20px;
-        z-index: 2;
-        fill: #7F7550;
-        // &--seven{
-        //     fill: red;
-        //     left: auto;
-        //     top: auto;
-        //     // transform: translate(100%, 0%);
-        //     width: 24.4645%;
-        //     height: 51%;
-        //     right: 20px;
-        //     bottom: 0;
-        //     // width: auto;
-        //     // height: auto;
-        //     margin: 0;
-        //     @include breakpoint(1266){
-        //         right: auto;
-        //         left: calc(50% + 373px);
-        //     }
-        //     @media screen and (min-height: 625){
-        //         bottom: auto;
-        //         top: calc(50% + 20px);
-        //     }
-        // }
+        z-index: 3;
+        fill: $primary-color;
+        &--path{
+            fill: none;
+            stroke: #7F7550;
+            z-index: 2;
+            margin-left: -16px;
+            mask path{
+                stroke-dashoffset: -1926.38;
+                stroke-dasharray: 0px, 1936.38px;
+                stroke: $white;
+                stroke-width: 3px;
+            }
+        }
+        &--fog{
+            // max-width: 1214px;
+            // left: 50%;
+            // transform: translateX(x);
+            text-align: center;
+            z-index: 1;
+            
+        }
+        &--inactive{
+            z-index: 2;
+        }
+        &_container{
+            position: relative;
+            display: inline-block;
+            height: 100%;
+            img{
+                height: 100%;
+            }
+        }
     }
     &_point{
         transition: fill 300ms;
-        cursor: help;
+        // cursor: help;
+        cursor: pointer;
+        outline: none;
+        visibility: hidden;
+        opacity: 0;
         &[aria-expanded="true"], &:hover, &:focus{
-            fill: $primary-color;
+            fill: $alert-color;
         }
+        &_digit{
+            fill: $white;
+        }
+        &_cross{
+            fill: $alert-color;
+        }
+        g{
+            opacity: 0;
+        }
+        &--inactive{
+            fill: #7f7550;
+            cursor: not-allowed;
+            .map_point{
+                &_digit{
+                    fill: #D7C99C;
+                }
+                &_cross{
+                    fill: #7f7550;
+                }
+            }
+        }
+    }
+    &_countdown{
+        position: absolute;
+        top: 50px;
+        right: 10.6%;
+        border-radius: 3px;
+        border: 1px solid #988a5b;
+        background-color: $secondary-color;
+        font-size: 18px;
+        padding: 8px 28px;
+        small{
+            display: block;
+        }
+        // right: 50%;
+        // transform: translateX(50%);
     }
 }

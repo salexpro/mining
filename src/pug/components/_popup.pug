@@ -1,20 +1,29 @@
 each item, i in menu
     if item.sub && i
-        .dropdown.dropdown--point(id=`pointPopup${i}` data-dropdown='' data-position=item.position ? item.position.h : 'right' data-alignment=item.position ? item.position.v : 'center' data-v-offset=item.offset ? item.offset.v : "0" data-h-offset=item.offset ? item.offset.h : "0" data-close-on-click='true')
-            p.dropdown_header
+        .dropdown.dropdown--point(id=`pointPopup${i}` data-dropdown data-options=`hover: true; hoverPane: true; position: ${item.position ? item.position.h : 'right'}; alignment: ${item.position ? item.position.v : 'center'}; vOffset: ${item.offset ? item.offset.v : '0'}; hOffset: ${item.offset ? item.offset.h : '0'}; closeOnClick: true`)
+            a.dropdown_header(href=item.link)&attributes(item.attrs)
                 !=item.title
             .dropdown_text
                 ul.dropdown_list
                     each subitem in item.sub
                         li
-                            a(href=subitem.link)&attributes(item.attrs)
+                            a(href=subitem.link)&attributes(subitem.attrs)
                                 =subitem.title
 
-#minerPopup.dropdown.dropdown--miner(data-dropdown='' data-position="left" data-alignment="top" data-v-offset="-48" data-h-offset="-65" data-close-on-click='true')
+#minerPopup.dropdown.dropdown--miner(data-dropdown data-options="position: left; alignment: bottom; vOffset: 176; hOffset: -65;")
     p.dropdown_header
-        | Добро пожаловать!
     p.dropdown_text
-        | Меня зовут Никостас Камнеплюй и я буду сопровождать тебя на протяжении нашего путешествия. Я отметил интересные точки на карте (отмечал в том порядке в котором их обнаружил). Куда отправимся?
+    button.dropdown_close(data-close)
+        +icon('cross', [10, 10])
+
+#video.reveal.large.reveal--video(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    .responsive-embed.reveal_video
+        #player
+
+
+#map.reveal.large.reveal--map(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
+    h2.reveal_header
+        | Карта хостеров и майнинг-отелей
     button.dropdown_close(data-close)
         +icon('cross', [10, 10])
 
@@ -38,7 +47,7 @@ each item, i in menu
         }
     ]
 
-#popup1.reveal(data-reveal data-deep-link)
+#what-is-it.reveal(data-reveal data-deep-link="true" data-update-history="true")
     p.reveal_header
         | Хочу майнить! Первые шаги
     p
@@ -67,7 +76,10 @@ each item, i in menu
         | Если вы решили заняться майнингом, важно понимать, что кроме заработка вы поддерживаете стабильность работы выбранной криптовалюты. 
 
     p
-        | К примеру, майнеры биткоина не только получают 12,5 BTC награды за найденный блок (в мае, после очередного халвинга, этот показатель уменьшится до 6,25 BTC), но и подтверждают транзакции в сети, то есть помогают каждому держателю криптовалют без сбоев и задержек отправлять и получать платежи.
+        | К примеру, майнеры биткоина не только получают 12,5 BTC награды за найденный блок (в мае, после очередного
+        | 
+        a(href="#") халвинга
+        | , этот показатель уменьшится до 6,25 BTC), но и подтверждают транзакции в сети, то есть помогают каждому держателю криптовалют без сбоев и задержек отправлять и получать платежи.
 
     p
         | Майнеры проверяют транзакции, подтверждают и записывают их в блок. Блокчейн — это цепочка связанных между собой блоков. Когда большинство майнеров копируют последний блок, транзакции исполнятся.
@@ -91,17 +103,17 @@ each item, i in menu
         p
             | Вид майнинга зависит от алгоритма консенсуса, то есть правил записи блоков в блокчейн. Два наиболее известных алгоритма —
             | 
-            strong Proof-of-Work
+            a(href="#") Proof-of-Work
             | , который используется в сети биткоина и Ethereum, и
             | 
-            strong Proof-of-Stake
+            a(href="#") Proof-of-Stake
             | — сети Dash и Stellar, например.
         .reveal_link
             .reveal_link_img
                 img(srcset="./assets/img/popup/differences@2x.png 2x, ./assets/img/popup/differences.png 1x" src="./assets/img/popup/differences.png", alt="PoW PoS")
             .reveal_link_content
                 | Подробнее о различиях между PoW и PoS вы можете прочитать в карточке ForkLog. 
-                a.button.hollow(href="#")
+                a.button.hollow(href="https://forklog.com/chto-takoe-proof-of-work-i-proof-of-stake/" target="_blank")
                     | Читать 10 минут
         p
             | Помимо двух основных алгоритмов консенсуса существует еще несколько десятков их видов. Для простоты мы кратко описали их в таблице:
@@ -149,10 +161,10 @@ each item, i in menu
         p.reveal_table_descr
             | Капитализацию криптовалют на PoC считали так: сложили капитализацию 12 монет на PoC и разделили на
             | 
-            b капитализацию крипторынка
+            a(href="#") капитализацию крипторынка
             | . Источник данных по капитализации криптовалют на других алгоритмах —
             | 
-            b Cryptoslate.com.
+            a(href="#") Cryptoslate.com.
 
     .reveal_block
         p#proof-of-work.reveal_subheader
@@ -160,7 +172,7 @@ each item, i in menu
         p
             | В алгоритме
             | 
-            strong Proof-of-Work
+            a(href="#") Proof-of-Work
             | 
             | (PoW – дословно: доказательство работы) за добавление новых блоков отвечают майнеры. Данный процесс включает в себя попытку найти хеш заголовка блока (часть блокчейна, которая содержит ссылку на предыдущий блок и суммированное значение транзакций, в него включенных), который будет по своему значению соответствовать текущему уровню сложности.
 
@@ -184,21 +196,25 @@ each item, i in menu
         p
             | В сети биткоина майнеры ищут подпись 10 минут независимо от скорости майнинга. Посчитать хеш-сумму заголовка блока можно на
             | 
-            strong листе бумаги за 17 минут.
+            a(href="#") листе бумаги за 17 минут.
             | 
             | Но чтобы майнить биткоин, нужно считать триллионы хешей в секунду. Для этого майнеры используют мощное оборудование. 
 
         p
             | В 2019 году майнеры биткоина потратили 58 тераватт электроэнергии. Столько же электроэнергии
             | 
-            strong потребляет, например, Швейцария.
+            a(href="#") потребляет, например, Швейцария.
             | 
             | PoS потребляет на 99% меньше электроэнергии, чем PoW.
     .reveal_block
         p#proof-of-stake.reveal_subheader
             | Как майнят на Proof-of-Stake
         p
-            | Алгоритм Proof-of-Stake использует «долю» (stake) в качестве ресурса, который определяет, какая именно нода получает право добычи следующего блока. Сложность в данном случае распределяется пропорционально и в соответствии с балансом данного узла, то есть в соответствии с количеством монет на счету пользователя.
+            | Алгоритм
+            | 
+            a(href="#") Proof-of-Stake
+            | 
+            | использует «долю» (stake) в качестве ресурса, который определяет, какая именно нода получает право добычи следующего блока. Сложность в данном случае распределяется пропорционально и в соответствии с балансом данного узла, то есть в соответствии с количеством монет на счету пользователя.
 
         p
             | Таким образом, больше шансов сгенерировать следующий блок имеет узел с большим балансом. Схема выглядит достаточно привлекательно прежде всего из-за небольших требований к вычислительным ресурсам, а также потому, что не стоит вопрос «потраченных впустую» мощностей.
@@ -224,8 +240,12 @@ each item, i in menu
     .reveal_block
         p#how-to-mine.reveal_subheader
             | На чем майнят криптовалюту
-        .reveal_img
-            img(src="", alt="")
+        .reveal_figure.reveal_img
+            img(srcset="./assets/img/popup/graph@2x.png 2x, ./assets/img/popup/graph.png 1x" src="./assets/img/popup/graph.png", alt="На чем майнят криптовалюту")
+            figcaption.reveal_figure_caption
+                | График корреляции цены биткоина с халвингом. Источник:
+                | 
+                a(href="#") 1in21million.club
         p
             | Устройства для майнинга биткоина менялись с течением времени, но их главной характеристикой была и остается величина хешрейта, то есть количество хешей, которое устройство считает за секунду.
 
@@ -238,14 +258,19 @@ each item, i in menu
         p
             | Сейчас майнеры получают 12,5 BTC за блок. Из-за высокой сложности сети добыча каждого блока занимает 10 минут. Однако если майнеры биткоина объединят
             | 
-            strong хешрейт
+            a(href="#") хешрейт
             | 
             | сети, то посчитают миллиард хешей за 0.00000009 секунды. Чтобы объединить шансы на награду, майнеры объединяются в пулы. Хешрейт их оборудования складывается в виртуальный ASIC. Пул делит награду между всеми участниками.
     .reveal_block
         p#where-is-it.reveal_subheader
             | Где располагаются мировые майнинговые центры
-        .reveal_img
-            img(src="", alt="")
+        .reveal_figure.reveal_img
+            img(srcset="./assets/img/popup/map@2x.png 2x, ./assets/img/popup/map.png 1x" src="./assets/img/popup/map.png", alt="Карта мировых майнинговых центров")
+            figcaption.reveal_figure_caption
+                | Карта мировых майнинговых центров. Источник:
+                | 
+                a(href="#") CoinShares Research
+
         p
             | 66% мирового хешрейта биткоина, по данным компании CoinShares, контролируют майнеры из Китая. Другими крупными центрами по добыче криптовалюты являются США, Канада и Россия (Сибирь).
         .reveal_link
@@ -253,8 +278,8 @@ each item, i in menu
                 img(srcset="./assets/img/popup/china@2x.png 2x, ./assets/img/popup/china.png 1x" src="./assets/img/popup/china.png", alt="Базирующиеся в Китае майнеры контролируют")
             .reveal_link_content
                 | Базирующиеся в Китае майнеры контролируют на сегодняшний день две ...
-                a.button.hollow(href="#")
-                    | Читать 10 минут
+                a.button.hollow(href="https://forklog.com/dolya-kitajskih-majnerov-v-heshrejte-bitkoina-dostigla-66/" target="_blank")
+                    | Читать 3 минут
         p
             | Как правило, основными аспектами при выборе региона для открытия майнинг-центра становятся дешевизна электроэнергии и низкие температуры, поскольку они помогают экономить на оборудовании для отвода тепла, вырабатываемого майнерами. 
 
@@ -266,30 +291,30 @@ each item, i in menu
                 img(srcset="./assets/img/popup/armenia@2x.png 2x, ./assets/img/popup/armenia.png 1x" src="./assets/img/popup/armenia.png", alt="Народное собрание Армении рассмотрит проект закона «О цифровых технологиях»")
             .reveal_link_content
                 | Народное собрание Армении рассмотрит проект закона «О цифровых технологиях»
-                a.button.hollow(href="#")
-                    | Читать 10 минут
+                a.button.hollow(href="https://forklog.com/armeniya-gotovit-zakonoproekt-o-legalizatsii-majninga/" target="_blank")
+                    | Читать 2 минут
         .reveal_link
             .reveal_link_img
                 img(srcset="./assets/img/popup/taxes@2x.png 2x, ./assets/img/popup/taxes.png 1x" src="./assets/img/popup/taxes.png", alt="Система налогообложения цифровых активов")
             .reveal_link_content
                 | Система налогообложения цифровых активов должна быть разработана до принятия ...
-                a.button.hollow(href="#")
-                    | Читать 10 минут
+                a.button.hollow(href="https://forklog.com/rossijskie-yuristy-predlozhili-priravnyat-kriptovalyuty-k-imushhestvennym-pravam-i-dat-lgoty-majneram/" target="_blank")
+                    | Читать 4 минут
         .reveal_link
             .reveal_link_img
                 img(srcset="./assets/img/popup/customs@2x.png 2x, ./assets/img/popup/customs.png 1x" src="./assets/img/popup/customs.png", alt="Федеральная таможенная служба России")
             .reveal_link_content
                 | Федеральная таможенная служба России поручила подчиненным службам усилить ...
-                a.button.hollow(href="#")
-                    | Читать 10 минут
+                a.button.hollow(href="https://forklog.com/rossiyan-obyazali-deklarirovat-vvozimoe-v-stranu-oborudovanie-dlya-majninga/" target="_blank")
+                    | Читать 2 минут
 
         .reveal_link
             .reveal_link_img
                 img(srcset="./assets/img/popup/mining@2x.png 2x, ./assets/img/popup/mining.png 1x" src="./assets/img/popup/mining.png", alt="Майнинг в России: строим ферму, обходим запреты и платим налоги")
             .reveal_link_content
                 | Майнинг в России: строим ферму, обходим запреты и платим налоги
-                a.button.hollow(href="#")
-                    | Читать 10 минут
+                a.button.hollow(href="https://forklog.com/majning-v-rossii-stroim-fermu-obhodim-zaprety-i-platim-nalogi/" target="_blank")
+                    | Читать 12 минут
         p
             | В России майнинг пока что законодательно не регулируется, однако в случае лояльного подхода регулятора у страны есть все предпосылки занять лидирующие позиции в этой индустрии с учетом дешевой электроэнергии, профессиональной рабочей силы и низких температур во многих регионах.
 

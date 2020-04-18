@@ -6,7 +6,7 @@
     align-items: flex-end;
     li{
         position: relative;
-        + li{
+        + li {
             margin-top: 20px;
         }
         &.is-accordion-submenu-parent{
@@ -21,7 +21,7 @@
                 border: 1px solid $white;
                 z-index: -1;
             }
-            > a{
+            > a, > span{
                 padding-right: 32px;
                 &::before, &::after{
                     content: '';
@@ -54,11 +54,16 @@
         padding: 0;
         color: $white;
         line-height: normal;
-        
+        outline: none;
         &:hover, &:focus{
             color: $secondary-color;
             text-decoration: underline;
         }
+    }
+    span{
+        color: #545454;
+        display: inline-block;
+        cursor: not-allowed;
     }
     &.submenu.is-accordion-submenu{
         font-size: 14px;
@@ -71,7 +76,9 @@
 }
 
 .accordion-menu{
-    > li:not(.is-accordion-submenu-parent) > a{
-        margin-right: 32px;
+    > li:not(.is-accordion-submenu-parent) {
+        > a, > span{
+            margin-right: 32px;
+        }
     }
 }

@@ -2,7 +2,7 @@
     outline: none;
     font-size: 14px;
     letter-spacing: 0.02em;
-    &[aria-hidden]{
+    &[aria-hidden]:not(.reveal--video){
         display: block !important;
         top: 0 !important;
     }
@@ -14,16 +14,19 @@
     //     left: 10px;
     //     width: calc(100% - 20px);
     // }
+    &.large{
+        width: 60%;
+    }
     &-overlay{
         // overflow: auto;
         display: block !important;
         opacity: 0;
         visibility: hidden;
-        transition: opacity 300ms, visibility 300ms;
+        transition: opacity 300ms, visibility 300ms !important;
         padding: 35px 0;
         backdrop-filter: blur(4px);
         &[style]:not([style*="none"]){
-            opacity: 1;
+            opacity: 1 !important;
             visibility: visible;
         }
         @include breakpoint(small down){
@@ -45,6 +48,7 @@
     }
     p{
         margin-bottom: 20px;
+        @extend %link;
     }
 
     .button{
@@ -156,7 +160,7 @@
         table-layout: fixed;
         position: relative;
         padding-bottom: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         &::before, &::after{
             content: '';
             position: absolute;
@@ -172,14 +176,15 @@
             left: auto;
             right: 24%;
         }
-        th, td{
+        th{
             font-weight: 500;
+        }
+        th, td{
             text-align: left;
             padding: 16px;
             &:first-child{
                 width: 24%;
                 padding-left: 35px;
-
             }
             &:nth-child(2){
                 width: 21%;
@@ -188,6 +193,9 @@
                 width: 24%;
                 padding-right: 35px;
             }
+        }
+        b{
+            color: #342f1c;
         }
         &_descr{
             line-height: 1.7;
@@ -200,6 +208,7 @@
         &_caption{
             margin-top: 20px;
             font-size: 12px;
+            @extend %link;
         }
     }
     &_cons{
@@ -216,14 +225,20 @@
         }
     }
     &_img{
-        background: #E6E6E6;
         border-radius: 0px 0px 24px 0px;
         margin-left: -35px;
-        padding-left: 35px;
-        width: calc(100% + 20px);
+        // padding-left: 35px;
+        width: calc(100% + 10px);
         margin-bottom: 20px;
-
+        overflow: hidden;
         min-height: 320px;
+        img{
+            width: 100%;
+        }
+        .reveal_figure_caption{
+            margin-top: 15px;
+            margin-left: 35px;
+        }
     }
     &_footer{
         margin: 0 -35px 0;
@@ -251,33 +266,49 @@
         }
     }
 
-    // &.fade-in.mui-enter {
-    //     transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
-    //     &.mui-enter-active {
-    //         transform: translate3d(0, 0, 0) perspective(435px) rotateX(0);
-    //     }
-    // }
+    &--video{
+        border-radius: 3px;
+        padding: 14px;
+    }
+    &--map{
+        background-color: #afa273;
+        box-shadow: 0 4px 10px rgba(101, 83, 20, 0.2), 0 2px 4px rgba(46, 30, 0, 0.15);
+        padding: 20px 0;
+        .reveal_header{
+            font-size: 31px;
+            margin-left: 40px;
+            color: $white;
+        }
+    }
 
-    // &.fade-out.mui-leave {
-    //     transform: translate3d(0, 0, 0) perspective(435px) rotateX(0);
-    //     &.mui-leave-active {
-    //         transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
-    //     }
-    // }
+
+    &.fade-in.mui-enter {
+        transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
+        &.mui-enter-active {
+            transform: translate3d(0, 0, 0) perspective(435px) rotateX(0);
+        }
+    }
+
+    &.fade-out.mui-leave {
+        transform: translate3d(0, 0, 0) perspective(435px) rotateX(0);
+        &.mui-leave-active {
+            transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
+        }
+    }
 }
 
-// .fade-in.mui-enter {
-//     transition: all 200ms ease-out !important;
-//     opacity: 0;
-//     &.mui-enter-active {
-//         opacity: 1;
-//     }
-// }
+.fade-in.mui-enter {
+    transition: all 200ms ease-out !important;
+    opacity: 0;
+    &.mui-enter-active {
+        opacity: 1;
+    }
+}
 
-// .fade-out.mui-leave {
-//     transition: all 200ms ease-in !important;
-//     opacity: 1;
-//     &.mui-leave-active {
-//         opacity: 0;
-//     }
-// }
+.fade-out.mui-leave {
+    transition: all 200ms ease-in !important;
+    opacity: 1;
+    &.mui-leave-active {
+        opacity: 0;
+    }
+}
