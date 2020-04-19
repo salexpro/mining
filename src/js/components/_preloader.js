@@ -70,7 +70,7 @@ $(window).on('load', () => {
         .fromTo('.map_header', { opacity: 0 }, { opacity: 1 })
         .fromTo('.map_header span', { width: 8, height: 0 }, { height: 43, ease: 'expo.in', duration: 0.7 }, '-=0.5')
         .to('.map_header span', { width: '100%', ease: 'expo.out', duration: 2 })
-        .fromTo('.map_container', { autoAlpha: 0 }, { autoAlpha: 1 }, '-=1.5')
+        .fromTo('.map_points_container', { opacity: 0 }, { opacity: 1 }, '-=1.5')
 
     const tlDuration = tl.totalDuration() - 1;
     const tlMap = gsap.timeline({ delay: tlDuration });

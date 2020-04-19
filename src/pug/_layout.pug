@@ -19,11 +19,10 @@ html(lang="ru")
             include components/_offcanvas
             include components/_popup
         block js
-            //- script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=', crossorigin='anonymous')
             script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
             script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js")
             script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
-            script.
+            //- script.
                 var player;
                 var tag = document.createElement('script');
                 tag.src = 'https://www.youtube.com/iframe_api';
@@ -36,3 +35,18 @@ html(lang="ru")
                     })
                 }
             script(src="./js/app.min.js")
+            
+            // Global site tag (gtag.js) - Google Analytics
+            script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-127959719-14')
+            script.
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-127959719-14');
+            script.
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-55375208-1', 'auto');
+                ga('send', 'pageview');

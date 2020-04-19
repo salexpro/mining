@@ -567,6 +567,17 @@
 		"plM": 1103269715967,
 		"prP": 0
 		},
+	"/src/assets/img/og-image.png": {
+		"ft": 32768,
+		"iS": 281857,
+		"oA": 0,
+		"oAP": "/docs/assets/img/og-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/partners/bitcluster.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -1304,7 +1315,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 608889744.61128199
+	"lastBuiltDate": 608964761.29143703
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

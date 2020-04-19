@@ -24,7 +24,7 @@
         visibility: hidden;
         transition: opacity 300ms, visibility 300ms !important;
         padding: 35px 0;
-        backdrop-filter: blur(4px);
+        // backdrop-filter: blur(4px);
         &[style]:not([style*="none"]){
             opacity: 1 !important;
             visibility: visible;
@@ -197,6 +197,7 @@
         b{
             color: #342f1c;
         }
+        @extend %link;
         &_descr{
             line-height: 1.7;
             font-size: 12px;
@@ -223,6 +224,7 @@
                 margin-top: 10px;
             }
         }
+        @extend %link;
     }
     &_img{
         border-radius: 0px 0px 24px 0px;

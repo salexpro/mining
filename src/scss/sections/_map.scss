@@ -66,8 +66,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        opacity: 0;
-        visibility: hidden;
+        
+        // visibility: hidden;
         > img{
             margin-left: -40px;
             height: 100%;
@@ -109,6 +109,7 @@
             position: relative;
             display: inline-block;
             height: 100%;
+            opacity: 0;
             img{
                 height: 100%;
             }
