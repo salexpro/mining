@@ -9,6 +9,10 @@
     box-shadow: 0 4px 10px rgba(101, 83, 20, 0.2), 0 2px 4px rgba(46, 30, 0, 0.15);
     padding: 20px 22px 30px;
     transition: visibility 300ms, opacity 300ms;
+    @include breakpoint(small down){
+        max-width: 330px;
+        width: calc(100vw - 30px);
+    }
     &::before{
         content: '';
         position: absolute;
@@ -42,12 +46,30 @@
             border-bottom-color: transparent;
         }
     }
+    &--point{
+        z-index: 5;
+        @include breakpoint(small down){
+            left: 50% !important;
+            transform: translateX(-50%);
+        }
+    }
     &--miner{
         border-top-right-radius: 12px;
         max-width: 330px;
+        // @include breakpoint(small down){
+        //     width: calc(100vw - 30px);
+        // }
         &::before{
             top: auto;
             bottom: 40px;
+            @include breakpoint(large down){
+                bottom: 30px;
+            }
+            @include breakpoint(small down){
+                left: auto;
+                right: 33px !important;
+                bottom: -18px;
+            }
         }
         &::after{
             border-top-right-radius: 12px;

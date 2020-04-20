@@ -1,2 +1,25 @@
 #menu.off-canvas.position-right.nav_mobile(data-off-canvas data-transition="overlap" data-auto-focus="false")
     +menu()(data-accordion-menu="" data-multi-open="false")
+
+    +social()(class="header_social--mobile")
+    .off-canvas_subscribe
+        p.off-canvas_subscribe_header
+            | Подпишитесь
+            br
+            | на рассылку
+        p.off-canvas_subscribe_lead
+            | и не пропускайте новые
+            br
+            | спецпроекты
+        form.off-canvas_subscribe_form(action="")
+            input(type="email" name="entry.1411777992" placeholder="Введите e-mail" required)
+            button.button
+                | Подписаться
+        a.off-canvas_subscribe_all(href="https://forklog.com/sp/" target="_blank")
+            p Все спецпроекты
+            +icon('crabRave', [59, 48])
+
+p.off-canvas_subscribe_header.off-canvas_subscribe_header--fixed
+    | Подпишитесь
+    br
+    | на рассылку

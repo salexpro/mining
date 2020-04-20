@@ -1,0 +1,28 @@
+mixin social
+    -
+        const shareLink = 'https://forklog.com/sp/all-about-mining';
+        const social = [
+            {
+                icon: ['fb', [11, 22]],
+                link: `http://www.facebook.com/sharer.php?u=${shareLink}`
+            },
+            {
+                icon: ['tw', [18, 14]],
+                link: `https://twitter.com/share?url=${shareLink}`
+            },
+            {
+                icon: ['vk', [18, 10]],
+                link: `https://vk.com/share.php?url=${shareLink}`
+            },
+            {
+                icon: ['tg', [18, 17]],
+                link: `https://telegram.me/share/url?url=${shareLink}`
+            },
+        ]
+    ul.header_social&attributes(attributes)
+        each item in social
+            li
+                a.header_social_item(href=item.link class=`header_social_item--${item.icon[0]}` target="_blank")
+                    +icon(...item.icon)
+                    svg.header_social_circle(viewBox='0 0 36 36', fill='none', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M32.59 12.7527C30.7555 8.40299 26.9284 3.7889 22.4623 3.00126C15.3894 1.75387 5.89176 2.79256 3.26276 12.1356C-1.90468 30.5 22.432 40.5375 30.7395 26.1226C32.5392 23 33.4485 21.3357 33.2519 19.1428')

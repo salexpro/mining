@@ -1,7 +1,7 @@
 .owl{
     &-carousel{
         .owl{
-            &-nav.disabled{
+            &-nav.owl-nav{
                 position: absolute;
                 top: 13px;
                 left: 0;
@@ -48,6 +48,7 @@
                 height: 6px;
                 background-color: $white;
                 transition: all 300ms;
+                -webkit-appearance: none;
                 &.active{
                     background: none;
                     box-shadow: inset 0 0 0 1.333px $primary-color;

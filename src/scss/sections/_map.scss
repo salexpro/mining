@@ -4,6 +4,12 @@
     flex: 1 1 100%;
     display: flex;
     flex-direction: column;
+    @include breakpoint(medium down){
+        overflow: auto;
+    }
+    @media screen and (max-width: #{map-get($breakpoints, 'large') - 1}) and (orientation: landscape){
+        overflow: visible;
+    }
     .container{
         position: relative;
         width: 100%;
@@ -11,13 +17,44 @@
         margin-bottom: 0;
         flex: 1 1 100%;
         min-height: 575px;
+        @include breakpoint(medium down){
+            min-height: auto;
+        }
+        @media screen and (max-width: #{map-get($breakpoints, 'large') - 1}) and (orientation: landscape){
+            min-height: calc(100vw / 2);
+        }
     }
-    &_header{
+    &_header {
         display: inline-block;
         position: relative;
         z-index: 1;
         padding-right: 24px;
         opacity: 0;
+        @include breakpoint(large down){
+            margin-top: 10px;
+            padding: 0 12px;
+        }
+        @include breakpoint(medium down){
+            position: fixed;
+            top: 105px;
+            left: 24px;
+            margin-top: 0;
+        }
+        @media screen and (max-width: #{map-get($breakpoints, 'large') - 1}) and (orientation: landscape){
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        @include breakpoint(755 down){
+            font-size: 4.02vw;
+        }
+        @include breakpoint(small down){
+            top: 75px;
+            max-width: 61vw;
+            padding: 0 10px;
+            left: 15px;
+            font-size: 5vw;
+        }
         span {
             display: block;
             white-space: nowrap;
@@ -30,8 +67,20 @@
             color: $white;
             overflow: hidden;
             text-indent: 12px;
+            @include breakpoint(large down){
+                left: 0;
+            }
+            @include breakpoint(small down){
+                white-space: normal;
+                padding: 0 10px;
+                text-indent: 0;
+            }
             &::before{
                 content: attr(data-title);
+                @include breakpoint(small down){
+                    width: calc(61vw - 20px);
+                    display: block;
+                }
             }
         }
     }
@@ -40,6 +89,12 @@
         bottom: -36px;
         left: 6px;
         transform: translateX(-100%);
+        @include breakpoint(large down){
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            z-index: -1;
+        }
         &.flip{
             #arcPath{
                 transform: scale(-1, 1) translate(-100%, 0);
@@ -51,6 +106,38 @@
         bottom: 0;
         right: -97px;
         z-index: 3;
+        @include breakpoint(large down){
+            right: 10px;
+            bottom: 10px;
+            svg{
+                width: 230px;
+                height: 250px;
+            }
+        }
+        @include breakpoint(medium down){
+            position: fixed;
+            bottom: 90px;
+        }
+        @media screen and (max-width: #{map-get($breakpoints, 'large') - 1}) and (orientation: landscape){
+            position: absolute;
+            right: 24px;
+            bottom: 10px;
+            width: 85px;
+            height: 97px;
+            background-image: url(../assets/img/miner_mobile.svg);
+            svg{
+                display: none;
+            }
+        }
+        @include breakpoint(small down){
+            right: 15px;
+            width: 85px;
+            height: 97px;
+            background-image: url(../assets/img/miner_mobile.svg);
+            svg{
+                display: none;
+            }
+        }
         &_g{
             cursor: pointer;
             user-select: none;
@@ -66,7 +153,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        @include breakpoint(medium down){
+            min-height: auto;
+            width: calc(((var(--vh, 1vh) * 100) - 95px - 80px) * 2);
+        }
+        @media screen and (max-width: #{map-get($breakpoints, 'large') - 1}) and (orientation: landscape){
+            width: 100%;
+            min-height: calc(100vw / 2);
+        }
         // visibility: hidden;
         > img{
             margin-left: -40px;
@@ -82,6 +176,9 @@
         margin-left: -20px;
         z-index: 3;
         fill: $primary-color;
+        @include breakpoint(large down){
+            margin-left: 0;
+        }
         &--path{
             fill: none;
             stroke: #7F7550;
@@ -100,7 +197,12 @@
             // transform: translateX(x);
             text-align: center;
             z-index: 1;
-            
+            @include breakpoint(medium down){
+                z-index: initial;
+            }
+            @include breakpoint(small down){
+                z-index: 1;
+            }
         }
         &--inactive{
             z-index: 2;
@@ -156,6 +258,24 @@
         background-color: $secondary-color;
         font-size: 18px;
         padding: 8px 28px;
+        @include breakpoint(large down){
+            right: 52px;
+            top: 60px;
+        }
+        @include breakpoint(medium down){
+            position: fixed;
+            top: 160px;
+            right: 24px;
+            z-index: 5;
+        }
+        @media screen and (max-width: #{map-get($breakpoints, 'large') - 1}) and (orientation: landscape){
+            position: absolute;
+            top: 60px;
+            display: none;
+        }
+        @include breakpoint(small down){
+            display: none;
+        }
         small{
             display: block;
         }

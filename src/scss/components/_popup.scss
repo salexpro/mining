@@ -14,6 +14,9 @@
     //     left: 10px;
     //     width: calc(100% - 20px);
     // }
+    @include breakpoint(small down){
+        padding: 30px 15px 0;
+    }
     &.large{
         width: 60%;
     }
@@ -94,6 +97,10 @@
             padding-bottom: 5.62%;
             background-image: url(../assets/img/wave.svg);
             margin-bottom: 5px;
+            @include breakpoint(small down){
+                width: calc(100% + 30px);
+                margin-left: -15px;
+            }
         }
         &:after{
             content: '';
@@ -105,6 +112,10 @@
             padding-bottom: 34.21%;
             background: linear-gradient(0deg, $white 0%, #F4F4F4 100%);
             z-index: -1;
+            @include breakpoint(small down){
+                left: -15px;
+                width: calc(100% + 30px);
+            }
         }
     }
     &_benefits{
@@ -112,10 +123,26 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 25px;
         margin-bottom: 20px;
+        @include breakpoint(small down){
+            grid-template-columns: auto;
+            row-gap: 30px;
+        }
     }
     &_benefit{
         &:first-child .reveal_benefit_img{
             padding: 2.5px 0;
+            @include breakpoint(small down){
+                padding: 0;
+            }
+        }
+        &_img{
+            @include breakpoint(small down){
+                text-align: center;
+                img{
+                    width: 100%;
+                    max-width: 350px;
+                }
+            }
         }
         &_header{
             display: block;
@@ -123,6 +150,9 @@
         }
         &_text{
             margin-top: 25px;
+            @include breakpoint(small down){
+                margin-top: 10px;
+            }
         }
     }
     &_link{
@@ -133,6 +163,12 @@
         background: #F4F4F4;
         border-radius: 0px 0px 24px 0px;
         width: calc(100% + 20px);
+        @include breakpoint(small down){
+            display: block;
+            margin-left: -15px;
+            width: calc(100% + 10px);
+            padding: 20px 15px;
+        }
         & + & {
             margin-top: 10px;
         }
@@ -142,6 +178,12 @@
         &_img{
             flex: 0 0 auto;
             margin-right: 22px;
+            @include breakpoint(small down){
+                margin: 0 0 10px;
+                img{
+                    width: 100%;
+                }
+            }
         }
         &_content{
             .button{
@@ -149,18 +191,32 @@
                 margin-left: auto;
                 min-width: 192px;
                 margin-top: 18px;
+                @include breakpoint(small down){
+                    margin-top: 10px;
+                }
             }
         }
     }
     &_table{
         font-size: 12px;
-        margin: 0 -35px;
         // width: calc(100% + 70px);
         border-spacing: 0;
         table-layout: fixed;
         position: relative;
-        padding-bottom: 20px;
-        margin-bottom: 15px;
+        &_overflow{
+            margin: 0 -35px;
+            overflow: auto;
+            padding-bottom: 20px;
+            margin-bottom: 15px;
+            -webkit-overflow-scrolling: touch;
+            @include breakpoint(small down){
+                margin: 0 -15px 15px;
+            }
+        }
+        @include breakpoint(small down){
+            width: 550px;
+            table-layout: auto;
+        }
         &::before, &::after{
             content: '';
             position: absolute;
@@ -175,6 +231,9 @@
             width: 31%;
             left: auto;
             right: 24%;
+            @include breakpoint(small down){
+                right: 24%;
+            }
         }
         th{
             font-weight: 500;
@@ -185,6 +244,9 @@
             &:first-child{
                 width: 24%;
                 padding-left: 35px;
+                @include breakpoint(small down){
+                    padding-left: 15px;
+                }
             }
             &:nth-child(2){
                 width: 21%;
@@ -192,6 +254,9 @@
             &:last-child{
                 width: 24%;
                 padding-right: 35px;
+                @include breakpoint(small down){
+                    padding-right: 15px;
+                }
             }
         }
         b{
@@ -233,13 +298,19 @@
         width: calc(100% + 10px);
         margin-bottom: 20px;
         overflow: hidden;
-        min-height: 320px;
+        // min-height: 320px;
+        @include breakpoint(small down){
+            margin-left: -15px;   
+        }
         img{
             width: 100%;
         }
         .reveal_figure_caption{
             margin-top: 15px;
             margin-left: 35px;
+            @include breakpoint(small down){
+                margin-left: 15px;
+            }
         }
     }
     &_footer{
@@ -248,10 +319,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        background: #E8E8E8;
+        @include breakpoint(small down){
+            margin: 0 -15px 0;
+            padding: 20px 15px;
+        }
         &_map{
             display: flex;
             align-items: center;
             font-size: 16px;
+            @include breakpoint(small down){
+                font-size: 12px;
+            }
             svg{
                 margin-right: 12px;
             }
@@ -261,6 +340,11 @@
             .button{
                 font-weight: 400;
                 min-width: 144px;
+                @include breakpoint(small down){
+                    min-width: auto;
+                    padding: 7px 18px;
+                    font-size: 12px;
+                }
                 + .button{
                     margin-left: 17px;
                 }
@@ -280,6 +364,13 @@
             font-size: 31px;
             margin-left: 40px;
             color: $white;
+        }
+    }
+
+    .dropdown_close{
+        @include breakpoint(small down){
+            position: fixed;
+            margin: 10px;
         }
     }
 

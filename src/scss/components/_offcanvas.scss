@@ -1,6 +1,27 @@
 .off-canvas{
     padding: 60px;
     padding-right: 14vw;
+    @include breakpoint(large down){
+        padding: 90px 52px 20px 30px;
+        width: 402px;
+        &.nav_mobile.position-right{
+            transform: translateX(402px);
+        }
+    }
+    @include breakpoint(medium down){
+        padding: 90px 24px 20px 30px;
+        width: 347px;
+        &.nav_mobile.position-right{
+            transform: translateX(347px);
+        }
+    }
+    @include breakpoint(small down){
+        width: 100%;
+        padding-bottom: 0;
+        &.nav_mobile.position-right{
+            transform: translateX(100%);
+        }
+    }
     &::-webkit-scrollbar {
         width: 0;   
     }
@@ -15,8 +36,128 @@
     //     background: red;
     //     z-index: -1;
     // }
+    &_subscribe{
+        position: relative;
+        margin: 0 -24px 0 -30px;
+        overflow: hidden;
+        text-align: center;
+        color: $white;
+        display: none;
+        @include breakpoint(small down){
+            display: block;
+        }
+        &_header{
+            font-size: 21px;
+            font-weight: 700;
+            color: $white;
+            text-align: center;
+            padding-top: 18px;
+            line-height: 1.16;
+            margin: 0;
+            height: 80px;
+            overflow: hidden;
+            &--fixed{
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                z-index: 16;
+                transform: translateY(100%);
+                transition: transform 300ms;
+                box-shadow: 0 20px 0 #a99c6f;
+                display: none;
+                @include breakpoint(small down){
+                    display: block;
+                }
+                &.hidden{
+                    // display: none;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 50%;
+                width: 745px;
+                height: 745px;
+                background: #a99c6f;
+                z-index: -1;
+            }
+        }
+        &_lead{
+            font-size: 18px;
+            line-height: 1.16;
+            margin-bottom: 14px;
+        }
+        &_form{
+            margin: 0 15px;
+            padding-bottom: 32px;
+            [type="email"]{
+                font-size: 18px;
+                border-radius: 24px;
+                padding: 13px 20px;
+                height: auto;
+                text-align: center;
+                font-weight: 500;
+                &::placeholder{
+                    color: #a09568;
+                }
+            }
+            .button{
+                margin-top: 10px;
+                box-shadow: 0 4px 10px rgba(101, 83, 20, 0.2), 0 2px 4px rgba(46, 30, 0, 0.15);
+                background-color: #d7c99c;
+                border-radius: 24px;
+                height: 48px;
+                width: 100%;
+                font-size: 18px;
+                color: $black;
+                &:hover, &:focus{
+                    background-color: darken(#d7c99c, 5);
+                }
+            }
+        }
+        &_all{
+            display: block;
+            position: relative;
+            padding-top: 28px;
+            font-size: 21px;
+            font-weight: 700;
+            padding-bottom: 15px;
+            color: $white !important;
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 50%;
+                width: 745px;
+                height: 745px;
+                background-color: $primary-color;
+                z-index: -1;
+            }
+            p{
+                line-height: 1.16;
+                margin-bottom: 16px;
+            }
+            svg{
+                color: $black;
+                margin: auto;
+            }
+        }
+        @include breakpoint(small down){
+            display: block;
+        }
+    }
 }
 
 .js-off-canvas-overlay{
     backdrop-filter: blur(4px);
+    @include breakpoint(small down){
+        display: none !important;
+    }
 }

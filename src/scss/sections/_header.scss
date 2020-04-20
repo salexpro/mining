@@ -1,5 +1,19 @@
 .header{
     margin-bottom: 15px;
+    @include breakpoint(large down){
+        margin-top: 40px;
+        // margin-bottom: 45px;
+    }
+    @media screen and (max-width: #{map-get($breakpoints, 'large') - 1}) and (orientation: landscape){
+        margin-top: 15px;
+    }
+    @include breakpoint(small down){
+        margin: 0;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        z-index: 15;
+        overflow: hidden;
+    }
     &::after{
         content: '';
         position: absolute;
@@ -8,18 +22,33 @@
         width: 133px;
         height: 196px;
         background-image: url(../assets/img/island_top.svg);
+        @include breakpoint(large down){
+            right: -80px;   
+        }
+        @include breakpoint(medium down){
+            display: none;
+        }
     }
     &_inner{
         display: flex;
         align-items: center;
         position: relative;
         min-height: 50px;
+        @include breakpoint(large down){
+            min-height: 40px;
+        }
+        @include breakpoint(small down){
+            min-height: auto;   
+        }
     }
     &_logo{
         color: $primary-color;
         transition: color 300ms;
         margin-right: auto;
         z-index: 1;
+        @include breakpoint(small down){
+            z-index: 15;
+        }
         &:hover, &:focus{
             color: $secondary-color;
             .header_logo_bg{
@@ -33,6 +62,15 @@
             z-index: -1;
             color: $secondary-color;
             transition: color 300ms;
+            @include breakpoint(large down){
+                left: -52px;
+                top: -40px;
+                width: 550px;
+                height: 180px;
+            }
+            @include breakpoint(medium down){
+                display: none;
+            }
         }
     }
     &_social{
@@ -41,6 +79,40 @@
         column-gap: 5px;
         list-style: none;
         margin: 0;
+        position: relative;
+        z-index: 4;
+        &--top{
+            @include breakpoint(755 down){
+                column-gap: 0;
+            }
+            @include breakpoint(small down){
+                display: none;
+            }
+        }
+        &--mobile{
+            // transform: scale(1.66);      
+            margin: 23px auto 17px;
+            grid-template-columns: repeat(4, 67px);
+            justify-content: center;
+            display: none;
+            @include breakpoint(small down){
+                display: grid;
+            }
+            .header_social{
+                &_item{
+                    color: $white;
+                    width: 67px;
+                    height: 67px;
+                    > svg:not([class]){
+                        transform: scale(1.66); 
+                    }
+                }
+                &_circle{
+                    // width: 60px;
+                    // height: 60px;
+                }
+            }
+        }
         &_item{
             display: flex;
             width: 36px;
@@ -87,6 +159,13 @@
         position: relative;
         padding: 4px 14px;
         margin: 0 14px;
+        @include breakpoint(755 down){
+            margin: 0 5px 0 0;
+            padding: 4px 5px;
+        }
+        @include breakpoint(small down){
+            display: none;
+        }
         &::before, &::after{
             content: '';
             position: absolute;
@@ -112,6 +191,10 @@
         width: 112px;
         opacity: 0;
         visibility: hidden;
+        z-index: 4;
+        @include breakpoint(755 down){
+            right: calc(100% - 112px - 5px);
+        }
         input{
             width: 100%;
             padding: 8.5px 18px;
@@ -134,11 +217,14 @@
         padding: 5px;
         margin: 0 -5px;
         background-color: transparent;
-        transition: color 300ms, background-color 200ms 0s;
+        transition: color 300ms, background-color 200ms 0s, box-shadow 200ms 0s;
         &[aria-expanded="true"]{
-            transition: color 300ms, background-color 300ms 200ms;
+            transition: color 300ms, background-color 300ms 200ms, box-shadow 300ms 300ms;
             color: $secondary-color;
             background: $black;
+            @include breakpoint(small down){
+                box-shadow: 0 0 0 100vw $black;
+            }
         }
     }
 }

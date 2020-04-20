@@ -1,4 +1,5 @@
-/* global $, gsap */
+/* global gsap */
+import $ from 'jquery';
 import '../plugins/_DrawSVGPlugin.js'; // quiet
 
 const pathPoints = [83.3, 65.7, 55.8, 38.6, 25.3, 13.8, 0]

@@ -72,6 +72,17 @@
 		"oAP": "/docs/node_modules",
 		"oF": 0
 		},
+	"/node_modules/jquery/dist/jquery.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/node_modules/jquery/dist/jquery.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/node_modules/owl.carousel/src/scss/_animate.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -416,6 +427,16 @@
 		"plM": 1103269715967,
 		"prP": 0
 		},
+	"/src/assets/img/crab_rave.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/img/crab_rave.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
 	"/src/assets/img/fog.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -443,7 +464,7 @@
 		"oAP": "/docs/assets/img/icons.svg",
 		"oF": 0,
 		"opt": 1,
-		"plM": 1103252938751,
+		"plM": 1103252807679,
 		"prP": 0
 		},
 	"/src/assets/img/icons/cross.svg": {
@@ -566,6 +587,16 @@
 		"opt": 1,
 		"plM": 1103269715967,
 		"prP": 0
+		},
+	"/src/assets/img/miner_mobile.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/img/miner_mobile.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 65566970732543,
+		"prP": 1
 		},
 	"/src/assets/img/og-image.png": {
 		"ft": 32768,
@@ -1023,6 +1054,17 @@
 		"oO": 0,
 		"oS": 0
 		},
+	"/src/js/lib/_owl.carousel.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/lib/_owl.carousel.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/src/js/lib/foundation-explicit-pieces.js": {
 		"bF": 4,
 		"ft": 64,
@@ -1102,6 +1144,16 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/docs/_popup.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/components/_social.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/_social.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1315,7 +1367,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 608964761.29143703
+	"lastBuiltDate": 609068413.43105102
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

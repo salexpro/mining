@@ -1,5 +1,6 @@
 html, body{
     -webkit-overflow-scrolling: touch;
+    height: 100%;
 }
 
 // Styled scrollbar
@@ -33,7 +34,8 @@ html, body{
     flex-direction: column;
     align-items: stretch;
     // justify-content: space-between;
-    min-height: 100vh;
+    // min-height: calc(var(--vh, 1vh) * 100);
+    min-height: 100%;
     background: linear-gradient(0deg, #a99c6f 0%, #a99c6d 100%);
     z-index: 1;
     &::before, &::after{
@@ -46,6 +48,9 @@ html, body{
         background-size: contain;
         background-repeat: no-repeat;
         z-index: -1;
+        @include breakpoint(medium down){
+            background-size: cover;
+        }
     }
     &::before{
         left: 0;
@@ -54,12 +59,27 @@ html, body{
         right: 0;
         transform: scale(-1, -1);
     }
+    &.is-open-right{
+        > .off-canvas_subscribe_header{
+            transform: translateY(0);
+            transition: transform 250ms 500ms cubic-bezier(.38,.62,.47,1.22);
+        }
+    }
 }
 
 .container{
-    max-width: 920px;
     max-width: 72%;
     margin: auto;
+    @include breakpoint(large down){
+        max-width: none;
+        padding: 0 52px;
+    }
+    @include breakpoint(medium down){
+        padding: 0 24px;   
+    }
+    @include breakpoint(small down){
+        padding: 0 15px;   
+    }
 }
 
 a{

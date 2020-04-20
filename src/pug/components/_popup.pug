@@ -1,6 +1,10 @@
 each item, i in menu
-    if item.sub && i
-        .dropdown.dropdown--point(id=`pointPopup${i}` data-dropdown data-options=`hover: true; hoverPane: true; position: ${item.position ? item.position.h : 'right'}; alignment: ${item.position ? item.position.v : 'center'}; vOffset: ${item.offset ? item.offset.v : '0'}; hOffset: ${item.offset ? item.offset.h : '0'}; closeOnClick: true`)
+    if item.link && item.sub && i
+        .dropdown.dropdown--point(id=`pointPopup${i}` 
+            data-position=item.position ? item.position.h : 'right'
+            data-alignment=item.position ? item.position.v : 'center'
+            data-vOffset=item.offset ? item.offset.v : '0'
+            data-hOffset=item.offset ? item.offset.h : '0')
             a.dropdown_header(href=item.link)&attributes(item.attrs)
                 !=item.title
             .dropdown_text
@@ -10,7 +14,10 @@ each item, i in menu
                             a(href=subitem.link)&attributes(subitem.attrs)
                                 =subitem.title
 
-#minerPopup.dropdown.dropdown--miner(data-dropdown data-options="position: left; alignment: bottom; vOffset: 176; hOffset: -65;")
+
+
+
+#minerPopup.dropdown.dropdown--miner
     p.dropdown_header
     p.dropdown_text
     button.dropdown_close(data-close)
@@ -120,46 +127,47 @@ each item, i in menu
                     | Читать 10 минут
         p
             | Помимо двух основных алгоритмов консенсуса существует еще несколько десятков их видов. Для простоты мы кратко описали их в таблице:
-        table.reveal_table
-            tr
-                th Алгоритм консенсуса
-                th Примеры криптовалют
-                th
-                    | От чего зависит шанс
-                    br
-                    | записать блок
-                th Капитализация криптовалют на этом алгоритме
-            tr
-                td Proof-of-Work
-                td BTC, ETH, LTC
-                td Скорость решения криптографической задачи
-                td 82.6%
-            tr
-                td Proof-of-Stake
-                td XLM, BNB, DASH
-                td Количество монет на кошельке
-                td 6.77%
-            tr
-                td Delegated Proof-of-Stake
-                td EOS, ADA, TRX
-                td Количество монет, которые пользователи делегировали майнеру
-                td 
-            tr
-                td Proof-of-Authority
-                td xDai, ZINC
-                td Майнеров назначают разработчики
-                td 2.36%
-            tr
-                td Proof-of-Capacity
-                td STORJ, BTCHD
-                td Свободное место на жестком диске
-                td 0.53%
-            tr
-                td
-                    a(href="https://hackernoon.com/consensuspedia-an-encyclopedia-of-29-consensus-algorithms-e9c4b4b7d08f" target="_blank") Другие 22 алгоритма
-                td DAY, IOST
-                td Оперативная память, сжигание монет, время непрерывного майнинга
-                td 7.74%
+        .reveal_table_overflow
+            table.reveal_table
+                tr
+                    th Алгоритм консенсуса
+                    th Примеры криптовалют
+                    th
+                        | От чего зависит шанс
+                        br
+                        | записать блок
+                    th Капитализация криптовалют на этом алгоритме
+                tr
+                    td Proof-of-Work
+                    td BTC, ETH, LTC
+                    td Скорость решения криптографической задачи
+                    td 82.6%
+                tr
+                    td Proof-of-Stake
+                    td XLM, BNB, DASH
+                    td Количество монет на кошельке
+                    td 6.77%
+                tr
+                    td Delegated Proof-of-Stake
+                    td EOS, ADA, TRX
+                    td Количество монет, которые пользователи делегировали майнеру
+                    td 
+                tr
+                    td Proof-of-Authority
+                    td xDai, ZINC
+                    td Майнеров назначают разработчики
+                    td 2.36%
+                tr
+                    td Proof-of-Capacity
+                    td STORJ, BTCHD
+                    td Свободное место на жестком диске
+                    td 0.53%
+                tr
+                    td
+                        a(href="https://hackernoon.com/consensuspedia-an-encyclopedia-of-29-consensus-algorithms-e9c4b4b7d08f" target="_blank") Другие 22 алгоритма
+                    td DAY, IOST
+                    td Оперативная память, сжигание монет, время непрерывного майнинга
+                    td 7.74%
 
         p.reveal_table_descr
             | Капитализацию криптовалют на PoC считали так: сложили капитализацию 12 монет на PoC и разделили на
@@ -278,7 +286,7 @@ each item, i in menu
             figcaption.reveal_figure_caption
                 | Карта мировых майнинговых центров. Источник:
                 | 
-                a(href="#" target="_blank") CoinShares Research
+                a(href="https://coinshares.com/assets/resources/Research/bitcoin-mining-network-december-2019.pdf" target="_blank") CoinShares Research
 
         p
             | 66% мирового хешрейта биткоина, по данным компании CoinShares, контролируют майнеры из Китая. Другими крупными центрами по добыче криптовалюты являются США, Канада и Россия (Сибирь).

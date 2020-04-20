@@ -11,6 +11,14 @@
         height: 343px;
         background-image: url(../assets/img/island_bottom.png);
         background-size: contain;
+        z-index: -1;
+        @include breakpoint(large down){
+            width: 64px;
+            height: 215px;
+        }
+        @include breakpoint(medium down){
+            display: none;   
+        }
     }
     .container{
         transform: translateY(80px);
@@ -28,6 +36,13 @@
             border: 1px solid #988a5b;
             background-color: $secondary-color;
             margin: auto;
+            @include breakpoint(medium down){
+                width: auto;
+                padding: 0 10px;
+            }
+            @include breakpoint(small down){
+                min-width: 180px;
+            }
             &:not(:hover):not(:focus){
                 path{
                     fill: #757162;

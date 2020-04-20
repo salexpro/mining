@@ -222,6 +222,7 @@ mixin menu()
             li
                 #{item.link ? 'a' : 'span'}(href=item.link || false)&attributes(!item.sub ? item.attrs : {})
                     !=item.title
+                    span.menu_icon
                 if item.sub
                     ul.menu.vertical.nested
                         each subitem in item.sub
