@@ -33,9 +33,9 @@ new Foundation.Dropdown($('#minerPopup'), {
     position: 'left',
     alignment: 'bottom',
     hOffset: offsetData.h,
-    vOffset: offsetData.v
+    vOffset: offsetData.v,
+    closeOnClick: true
 });
-
 
 // Point dropdowns
 const isMobile = !Foundation.MediaQuery.is('medium');
@@ -50,6 +50,8 @@ $('.dropdown--point').each(function(){
         closeOnClick: true
     });
 })
+
+$('.reveal_footer_map').click(() => $('.nav_mobile').foundation('close'))
 
 const minerHint = (hint, delay) => {
     setTimeout(() => {

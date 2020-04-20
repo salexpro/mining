@@ -373,6 +373,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/benefits/decenter_mobile.png": {
+		"ft": 32768,
+		"iS": 72491,
+		"oA": 0,
+		"oAP": "/docs/assets/img/benefits/decenter_mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/benefits/decenter_mobile@2x.png": {
+		"ft": 32768,
+		"iS": 193074,
+		"oA": 0,
+		"oAP": "/docs/assets/img/benefits/decenter_mobile@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/benefits/emission.png": {
 		"ft": 32768,
 		"iS": 33674,
@@ -395,6 +417,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/benefits/emission_mobile.png": {
+		"ft": 32768,
+		"iS": 70319,
+		"oA": 0,
+		"oAP": "/docs/assets/img/benefits/emission_mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/benefits/emission_mobile@2x.png": {
+		"ft": 32768,
+		"iS": 203452,
+		"oA": 0,
+		"oAP": "/docs/assets/img/benefits/emission_mobile@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/benefits/payments.png": {
 		"ft": 32768,
 		"iS": 32837,
@@ -411,6 +455,28 @@
 		"iS": 96723,
 		"oA": 0,
 		"oAP": "/docs/assets/img/benefits/payments@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/benefits/payments_mobile.png": {
+		"ft": 32768,
+		"iS": 65623,
+		"oA": 0,
+		"oAP": "/docs/assets/img/benefits/payments_mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/benefits/payments_mobile@2x.png": {
+		"ft": 32768,
+		"iS": 194943,
+		"oA": 0,
+		"oAP": "/docs/assets/img/benefits/payments_mobile@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -568,6 +634,17 @@
 		"plM": 1103269715967,
 		"prP": 0
 		},
+	"/src/assets/img/map.png": {
+		"ft": 32768,
+		"iS": 195281,
+		"oA": 0,
+		"oAP": "/docs/assets/img/map.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/map.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -577,6 +654,28 @@
 		"opt": 1,
 		"plM": 1103269715967,
 		"prP": 0
+		},
+	"/src/assets/img/map@2x.png": {
+		"ft": 32768,
+		"iS": 488408,
+		"oA": 0,
+		"oAP": "/docs/assets/img/map@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/map@3x.png": {
+		"ft": 32768,
+		"iS": 835842,
+		"oA": 0,
+		"oAP": "/docs/assets/img/map@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/src/assets/img/miner.svg": {
 		"ft": 2097152,
@@ -1367,7 +1466,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 609068413.43105102
+	"lastBuiltDate": 609076356.33787
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

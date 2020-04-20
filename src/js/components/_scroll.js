@@ -22,10 +22,17 @@ $('.reveal_list a').click(e => scrollToEl(e, $(e.target).closest('.reveal')))
 
 $('.nav_mobile').scroll(() => {
     const $topbar = $('.off-canvas_subscribe_header--fixed')
-    console.log($('.off-canvas_subscribe').offset().top - $topbar.offset().top)
+
     if (($('.off-canvas_subscribe').offset().top - $topbar.offset().top) <= 0) {
         $topbar.addClass('hidden')
     } else {
         $topbar.removeClass('hidden')
     }
+})
+
+$('.off-canvas_subscribe_header--fixed').click(() => {
+    $('.nav_mobile').animate({
+        scrollTop: document.documentElement.scrollHeight,
+        easing: 'swing'
+    }, 500);
 })

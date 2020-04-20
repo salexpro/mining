@@ -54,7 +54,7 @@ each item, i in menu
         }
     ]
 
-#what-is-it.reveal(data-reveal data-deep-link="true" data-update-history="true")
+#what-is-it.reveal(data-reveal data-deep-link="true")
     p.reveal_header
         | Хочу майнить! Первые шаги
     p
@@ -101,7 +101,9 @@ each item, i in menu
             each item in benefits
                 figure.reveal_benefit
                     .reveal_benefit_img
-                        img(srcset=`./assets/img/benefits/${item.img}@2x.png 2x, ./assets/img/benefits/${item.img}.png 1x` src=`./assets/img/benefits/${item.img}.png` alt=item.header)
+                        picture
+                            source(srcset=`./assets/img/benefits/${item.img}_mobile@2x.png 2x, ./assets/img/benefits/${item.img}_mobile.png 1x` media='(max-width: 639px)')
+                            img(srcset=`./assets/img/benefits/${item.img}@2x.png 2x, ./assets/img/benefits/${item.img}.png 1x` src=`./assets/img/benefits/${item.img}.png` alt=item.header)
                     figcaption.reveal_benefit_text
                         strong.reveal_benefit_header
                             =item.header
