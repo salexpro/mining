@@ -60,12 +60,6 @@
 		"oAP": "/docs/build.zip",
 		"oF": 1
 		},
-	"/docs": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/docs/docs",
-		"oF": 0
-		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 1,
@@ -770,7 +764,7 @@
 		},
 	"/src/assets/img/popup/armenia.png": {
 		"ft": 32768,
-		"iS": 25341,
+		"iS": 53981,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/armenia.png",
 		"oF": 0,
@@ -781,7 +775,7 @@
 		},
 	"/src/assets/img/popup/armenia@2x.png": {
 		"ft": 32768,
-		"iS": 88422,
+		"iS": 193814,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/armenia@2x.png",
 		"oF": 0,
@@ -792,7 +786,7 @@
 		},
 	"/src/assets/img/popup/china.png": {
 		"ft": 32768,
-		"iS": 11314,
+		"iS": 20896,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/china.png",
 		"oF": 0,
@@ -803,7 +797,7 @@
 		},
 	"/src/assets/img/popup/china@2x.png": {
 		"ft": 32768,
-		"iS": 33197,
+		"iS": 69838,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/china@2x.png",
 		"oF": 0,
@@ -814,7 +808,7 @@
 		},
 	"/src/assets/img/popup/customs.png": {
 		"ft": 32768,
-		"iS": 10151,
+		"iS": 18902,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/customs.png",
 		"oF": 0,
@@ -825,7 +819,7 @@
 		},
 	"/src/assets/img/popup/customs@2x.png": {
 		"ft": 32768,
-		"iS": 28540,
+		"iS": 56156,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/customs@2x.png",
 		"oF": 0,
@@ -836,7 +830,7 @@
 		},
 	"/src/assets/img/popup/differences.png": {
 		"ft": 32768,
-		"iS": 16337,
+		"iS": 29801,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/differences.png",
 		"oF": 0,
@@ -847,7 +841,7 @@
 		},
 	"/src/assets/img/popup/differences@2x.png": {
 		"ft": 32768,
-		"iS": 44566,
+		"iS": 80425,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/differences@2x.png",
 		"oF": 0,
@@ -902,7 +896,7 @@
 		},
 	"/src/assets/img/popup/mining.png": {
 		"ft": 32768,
-		"iS": 22946,
+		"iS": 42264,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/mining.png",
 		"oF": 0,
@@ -913,7 +907,7 @@
 		},
 	"/src/assets/img/popup/mining@2x.png": {
 		"ft": 32768,
-		"iS": 61084,
+		"iS": 109262,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/mining@2x.png",
 		"oF": 0,
@@ -979,7 +973,7 @@
 		},
 	"/src/assets/img/popup/taxes.png": {
 		"ft": 32768,
-		"iS": 22946,
+		"iS": 65271,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/taxes.png",
 		"oF": 0,
@@ -1001,7 +995,7 @@
 		},
 	"/src/assets/img/popup/taxes@2x.png": {
 		"ft": 32768,
-		"iS": 61084,
+		"iS": 235084,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/taxes@2x.png",
 		"oF": 0,
@@ -1466,7 +1460,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 609076356.33787
+	"lastBuiltDate": 609155701.39853895
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

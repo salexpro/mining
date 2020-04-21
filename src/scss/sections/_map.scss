@@ -30,6 +30,12 @@
         z-index: 1;
         padding-right: 24px;
         opacity: 0;
+        &::before{
+            content: '“';
+        }
+        &::after{
+            content: '”';
+        }
         @include breakpoint(large down){
             margin-top: 10px;
             padding: 0 12px;
@@ -50,10 +56,15 @@
         }
         @include breakpoint(small down){
             top: 75px;
-            max-width: 61vw;
-            padding: 0 10px;
             left: 15px;
             font-size: 5vw;
+            padding: 0 10px;
+        }
+        br{
+            display: none;
+            @include breakpoint(small down){
+                display: block;
+            }
         }
         span {
             display: block;
@@ -72,14 +83,15 @@
             }
             @include breakpoint(small down){
                 white-space: normal;
-                padding: 0 10px;
+                // padding: 0 10px;
                 text-indent: 0;
             }
             &::before{
                 content: attr(data-title);
                 @include breakpoint(small down){
-                    width: calc(61vw - 20px);
                     display: block;
+                    padding: 0 10px;
+                    width: calc(56vw + 20px);
                 }
             }
         }
@@ -153,6 +165,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        user-select: none;
         @include breakpoint(medium down){
             min-height: auto;
             width: calc(((var(--vh, 1vh) * 100) - 95px - 80px) * 2);
@@ -257,7 +270,7 @@
         right: 10.6%;
         border-radius: 3px;
         border: 1px solid #988a5b;
-        background-color: $secondary-color;
+        background-color: $white;
         font-size: 18px;
         padding: 8px 28px;
         @include breakpoint(large down){

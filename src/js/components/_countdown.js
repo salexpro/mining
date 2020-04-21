@@ -8,5 +8,5 @@ const declOfNum = (number, labels) => {
 }
 
 $('.map_countdown_time').countdown('2020/04/25 10:00', ({ target, offset: { days, hours, minutes}}) => {
-    $(target).text(`${days} ${declOfNum(days, ['день', 'дня', 'дней'])} ${hours} ${declOfNum(hours, ['час', 'часа', 'часов'])} ${minutes} ${declOfNum(minutes, ['минута', 'минуты', 'минут'])}`);
+    $(target).text(`${days} ${declOfNum(days, ['день', 'дня', 'дней'])} ${hours} ${declOfNum(hours, ['час', 'часа', 'часов'])} ${minutes} ${declOfNum(minutes, ['минуту', 'минуты', 'минут'])}`);
 });

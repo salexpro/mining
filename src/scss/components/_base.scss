@@ -1,3 +1,13 @@
+html{
+    &.is-reveal-open{
+        position: static;
+        overflow: visible !important;
+        body{
+            overflow: visible;
+        }
+    }
+}
+
 html, body{
     -webkit-overflow-scrolling: touch;
     height: 100%;

@@ -111,15 +111,15 @@ $(window).on('load', () => {
             e.stopPropagation();
             nextHint()
             clearInterval(minerInterval);
+            minerInterval = false;
         })
 
-        const minerInterval = setInterval(nextHint, 10000);
+        let minerInterval = setInterval(nextHint, 30000);
 
         $('#minerPopup .dropdown_close').click(() => {
             clearInterval(minerInterval);
+            minerInterval = false;
         })
         
-    }, (tlDuration + 3.5) * 1000);
-
-    
+    }, (tlDuration + 3.5) * 1000);    
 })

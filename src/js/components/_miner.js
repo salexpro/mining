@@ -64,7 +64,7 @@ const minerHint = (hint, delay) => {
 let hintIdx = 2;
 
 const nextHint = () => {
-    if (!$('.dropdown--point').hasClass('is-open')){
+    if (!$('.dropdown--point').hasClass('is-open') && !$('.dropdown--miner').is(':hover')){
         const hint = hints[hintIdx];
         $('#minerPopup').foundation('close')
         minerHint(hint, 300);

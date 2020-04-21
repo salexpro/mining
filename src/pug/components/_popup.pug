@@ -55,7 +55,7 @@ each item, i in menu
     ]
 
 #what-is-it.reveal(data-reveal data-deep-link="true")
-    p.reveal_header
+    h2.reveal_header
         | Хочу майнить! Первые шаги
     p
         | Спецпроект “Все, что нужно знать о майнинге биткоина” подготовлен журналом ForkLog в партнерстве с одним из крупнейших российских майнинг-отелей
@@ -78,7 +78,7 @@ each item, i in menu
                 a(href=item.link)
                     =item.title
     
-    p#what-is-minig.reveal_subheader
+    h3#what-is-minig.reveal_subheader
         | Что такое майнинг
     p
         | Майнингом обычно называют процесс добычи криптовалют, чаще всего — биткоина.
@@ -95,7 +95,7 @@ each item, i in menu
         | Майнеры проверяют транзакции, подтверждают и записывают их в блок. Блокчейн — это цепочка связанных между собой блоков. Когда большинство майнеров копируют последний блок, транзакции исполнятся.
 
     .reveal_block
-        p#what-for.reveal_subheader
+        h3#what-for.reveal_subheader
             | Зачем нужен майнинг
         .reveal_benefits
             each item in benefits
@@ -110,7 +110,7 @@ each item, i in menu
                         =item.descr
 
     .reveal_block
-        p#kinds-of-mining.reveal_subheader
+        h3#kinds-of-mining.reveal_subheader
             | Какие бывают виды майнинга
         p
             | Вид майнинга зависит от алгоритма консенсуса, то есть правил записи блоков в блокчейн. Два наиболее известных алгоритма —
@@ -180,7 +180,7 @@ each item, i in menu
             a(href="https://cryptoslate.com/coins/" target="_blank") Cryptoslate.com.
 
     .reveal_block
-        p#proof-of-work.reveal_subheader
+        h3#proof-of-work.reveal_subheader
             | Как майнят криптовалюты на Proof-of-Work
         p
             | В алгоритме
@@ -219,7 +219,7 @@ each item, i in menu
             a(href="https://www.bbc.com/news/technology-48853230" target="_blank") потребляет, например, Швейцария
             | . PoS потребляет на 99% меньше электроэнергии, чем PoW.
     .reveal_block
-        p#proof-of-stake.reveal_subheader
+        h3#proof-of-stake.reveal_subheader
             | Как майнят на Proof-of-Stake
         p
             | Алгоритм
@@ -257,7 +257,7 @@ each item, i in menu
                 | 
                 | монет.
     .reveal_block
-        p#how-to-mine.reveal_subheader
+        h3#how-to-mine.reveal_subheader
             | На чем майнят криптовалюту
         .reveal_figure.reveal_img
             img(srcset="./assets/img/popup/graph@2x.png 2x, ./assets/img/popup/graph.png 1x" src="./assets/img/popup/graph.png", alt="На чем майнят криптовалюту")
@@ -281,7 +281,7 @@ each item, i in menu
             | 
             | сети, то посчитают миллиард хешей за 0.00000009 секунды. Чтобы объединить шансы на награду, майнеры объединяются в пулы. Хешрейт их оборудования складывается в виртуальный ASIC. Пул делит награду между всеми участниками.
     .reveal_block
-        p#where-is-it.reveal_subheader
+        h3#where-is-it.reveal_subheader
             | Где располагаются мировые майнинговые центры
         .reveal_figure.reveal_img
             img(srcset="./assets/img/popup/map@2x.png 2x, ./assets/img/popup/map.png 1x" src="./assets/img/popup/map.png", alt="Карта мировых майнинговых центров")
