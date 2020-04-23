@@ -19,6 +19,15 @@
     }
     &.large{
         width: 60%;
+        @include breakpoint(large down){
+            width: 80%;
+        }
+        @include breakpoint(small down){
+            width: 95%;
+            height: auto;
+            min-height: auto;
+            margin: auto;
+        }
     }
     &-overlay{
         // overflow: auto;
@@ -358,6 +367,9 @@
     &--video{
         border-radius: 3px;
         padding: 14px;
+        @include breakpoint(small down){
+            padding: 10px;
+        }
     }
     &--map{
         background-color: #afa273;
