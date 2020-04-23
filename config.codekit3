@@ -8,7 +8,7 @@
 		},
 	{
 		"name": "New \"Run Script\" Step",
-		"scriptSourceString": "rm -f build.zip\nzip -r build.zip docs/",
+		"scriptSourceString": "rm -f build.zip\nzip -r build.zip docs -x 'docs/robots.txt' 'docs/CNAME' '*.map' '*/\\.*'",
 		"scriptType": 1,
 		"scriptUUIDString": "6366FA1E-B734-4D93-BE1B-0AE5E5857F91",
 		"stepType": 2,
@@ -59,6 +59,12 @@
 		"oA": 1,
 		"oAP": "/docs/build.zip",
 		"oF": 1
+		},
+	"/docs": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/docs/docs",
+		"oF": 0
 		},
 	"/node_modules": {
 		"ft": 65536,
@@ -1141,9 +1147,9 @@
 		},
 	"/src/js/data/miner.json": {
 		"ft": 524288,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/docs/js/data/miner.json",
-		"oF": 0,
+		"oF": 1,
 		"oO": 0,
 		"oS": 0
 		},
@@ -1279,6 +1285,14 @@
 		"oAP": "/docs/_header.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"/src/robots.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/robots.txt",
+		"oF": 1
 		},
 	"/src/scss/_settings.scss": {
 		"aP": 1,
@@ -1460,7 +1474,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 609155701.39853895
+	"lastBuiltDate": 609361258.946697
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
