@@ -19,7 +19,7 @@
         top: 80px;
         border: 9px solid $white;
         z-index: -2;
-        filter: drop-shadow(0 2px 4px rgba(46, 30, 0, 0.15))
+        // filter: drop-shadow(0 2px 4px rgba(46, 30, 0, 0.15))
     }
     &::after{
         content: '';
@@ -52,10 +52,18 @@
             left: 50% !important;
             transform: translateX(-50%);
         }
-        .dropdown_header{
-            border-bottom: 1px solid;
-            &:hover, &:focus{
-                color: $alert-color;
+        .dropdown{
+            &_header{
+                display: inline;
+                padding-bottom: 2px;
+                border-bottom: 1px solid;
+                line-height: 1.4;
+                &:hover, &:focus{
+                    color: $alert-color;
+                }
+            }
+            &_text{
+                margin-top: 14px;
             }
         }
     }

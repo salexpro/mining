@@ -75,22 +75,26 @@
         list-style: none;
         font-weight: 700;
         line-height: 1.9;
+        li{
+            padding-bottom: 2px;
+        }
         a {
-            display: inline-block;
+            // display: inline-block;
             position: relative;
+            border-bottom: 1px dashed transparent;
+            padding-bottom: 2px;
             &:after{
                 content: '';
                 position: absolute;
                 width: 100%;
                 left: 0;
                 bottom: 0;
-                border-bottom: 1px dashed transparent;
                 transition: border-color 250ms;
             }
             &:hover, &:focus{
                 color: #7F7550;
+                border-color: #7F7550;
                 &:after{
-                    border-color: #7F7550;
                 }
             }
         }
@@ -133,6 +137,15 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 25px;
         margin-bottom: 20px;
+        &--small{
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+            .reveal_benefit_text{
+                font-size: 12px;
+                margin-top: 11px;
+                line-height: 1.7;
+            }
+        }
         @include breakpoint(small down){
             grid-template-columns: auto;
             row-gap: 30px;
@@ -207,6 +220,26 @@
                     margin-top: 10px;
                 }
             }
+        }
+    }
+    &_quote{
+        padding: 20px 20px 20px 35px;
+        background: #F4F4F4;
+        margin-left: -35px;
+        border-radius: 0px 0px 24px 0px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.4;
+        @extend %link;
+        @include breakpoint(small down){
+            margin-left: -15px;
+            width: calc(100% + 10px);
+            padding: 20px 15px;
+        }
+        &_cite{
+            font-style: normal;
+            font-weight: 400;
+            margin-top: 20px;
         }
     }
     &_table{
@@ -314,6 +347,12 @@
         @include breakpoint(small down){
             margin-left: -15px;   
         }
+        &--mobile{
+            @include breakpoint(small down){
+                width: calc(100% + 30px);
+                margin-right: -15px;
+            }
+        }
         img{
             width: 100%;
         }
@@ -361,6 +400,12 @@
                     margin-left: 17px;
                 }
             }
+        }
+    }
+
+    ul, ol{
+        &:not(.reveal_list){
+            @extend %link;
         }
     }
 

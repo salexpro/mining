@@ -1,0 +1,359 @@
+-
+    const benefits2 = [
+        {
+            img: 'antminer',
+            descr: 'Вот как выглядит ASIC-майнер Bitmain Antminer S17+'
+        },
+        {
+            img: 'innnosilicon',
+            descr: 'А так выглядит ASIC-майнер Innosilicon A10'
+        }
+    ]
+
+#what-to-mine.reveal(data-reveal data-deep-link="true")
+    h2.reveal_header
+        | Что майнить: почему майнеры отдают предпочтение биткоину
+    p
+        | Спецпроект “Все, что нужно знать о майнинге биткоина” подготовлен журналом ForkLog в партнерстве с одним из крупнейших российских майнинг-отелей
+        | 
+        a(href="https://bitcluster.ru/" target="_blank") BitCluster
+        | , поставщиком майнингового оборудования
+        | 
+        a(href="http://chilkoot.ru" target="_blank") Chilkoot
+        | 
+        | и крупнейшим в Европе майнинг-пулом
+        | 
+        a(href="https://emcd.io/ru/" target="_blank") EMCD
+        | .
+    p
+        | В этом материале спецпроекта о майнинге мы расскажем:
+
+    ul.reveal_list
+        each item in menu[3].sub
+            li
+                a(href=item.link)
+                    =item.title
+
+    p
+        | Биткоин — первая и наиболее популярная криптовалюта как среди обычных пользователей, так и среди майнеров и прочих
+        | 
+        a(href="https://forklog.com/grayscale-upravlyaet-285-000-btc-eto-pochti-2-ot-obema-predlozheniya-bitkoina/" target="_blank") крупных игроков. 
+
+    p
+        | По данным исследователей
+        | 
+        a(href="https://www.theblockcrypto.com/genesis/52834/a-look-back-at-2019-by-the-numbers" target="_blank") The Block
+        | , в прошлом году доходы добытчиков цифрового золота превысили поступления Ethereum-майнеров более чем в 5 раз. В 2019 майнеры первой криптовалюты получили $5 млрд дохода. За этот же период общая сумма вознаграждения добытчиков эфира не превысила $1 млрд.
+
+    p
+        | Несмотря на уверенный рост хешрейта и, соответственно, сложности добычи BTC, инвестиции в устройства под SHA-256 окупаются несколько быстрее, чем вложения в на зачастую довольно дорогие майнеры на других алгоритмах.
+
+    p
+        | Например, по состоянию на 21.03.2020 Antminer S17+ 67TH/s стоимостью
+        | 
+        a(href="https://shop.bitmain.com/product/detail?pid=00020200226221734823y2nbwIDR06BF" target="_blank") $1567
+        | 
+        | выдает в сутки 
+        | 
+        a(href="https://www.f2pool.com/miners?currency_code=btc#list-head" target="_blank") $2,39 прибыли
+        | 
+        | при цене электричества $0,06 за кВт⋅ч, окупаемость устройства составляет 655 дней.
+    
+    .reveal_benefits.reveal_benefits--small
+        each item in benefits2
+            figure.reveal_benefit
+                .reveal_benefit_img
+                    img(srcset=`./assets/img/benefits/${item.img}@2x.png 2x, ./assets/img/benefits/${item.img}.png 1x` src=`./assets/img/benefits/${item.img}.png` alt=item.header)
+                figcaption.reveal_benefit_text
+                    =item.descr
+    p
+        | В это же время популярное ASIC-устройство для добычи Ethereum — INNOSILICON A10 — стоимостью
+        | 
+        a(href="https://www.innosilicon.com/html/a10-miner/index.html" target="_blank") $3000
+        | 
+        | выдает
+        | 
+        a(href="https://www.poolin.com/" target="_blank") $4,05
+        | 
+        | прибыли. Окупаемость устройства — 740 дней.
+        
+    p
+        | Уже долгое время на рынке майнинга царит
+        | 
+        a(href="https://ru.wikipedia.org/wiki/%D0%9E%D0%BB%D0%B8%D0%B3%D0%BE%D0%BF%D0%BE%D0%BB%D0%B8%D1%8F" target="_blank") олигополия
+        | 
+        | — производственные мощности продолжают концентрироваться у нескольких компаний: Bitmain, Canaan Creative и Whatsminer. Согласно прогнозу исследователей
+        | 
+        a(href="https://tokeninsight.com/report/1034?lang=en" target="_blank") TokenInsight
+        | , рыночная доля китайских производителей продолжит расти.
+
+    p
+        | После суровой криптозимы 2018 года первая криптовалюта восстанавливается намного быстрее Ethereum, Litecoin, Zcash и многих других монет на механизме консенсуса Proof-of-Work. Это отражается не только на рынке майнинга, но и на индексе доминирования биткоина, который уже долгое время находится
+        | 
+        a(href="https://coinmarketcap.com/charts/#dominance-percentage" target="_blank") выше отметки 60%
+        | . Таким образом, спрос на первую криптовалюту по-прежнему выше, чем на все альткоины вместе взятые. 
+    
+    .reveal_block
+        h3.reveal_subheader(id=menu[3].sub[0].link.substr(1))
+            =menu[3].sub[0].title
+
+        p
+            | Когда биткоин еще только появился, его можно было майнить даже на обычном ноутбуке, используя центральный процессор (CPU). Однако уже летом 2010 года цена BTC выросла до $0,08 и тогда еще немногочисленное сообщество убедилось, что майнинг может с лихвой покрывать затраты на электричество. 
+
+        p
+            | Конкуренция возросла и для максимизации дохода были задействованы видеокарты (GPU), выдающие намного большую скорость хеширования при довольно неплохой энергоэффективности и приемлемой цене самих устройств.
+
+        p
+            | В 2009 году майнеры добывали биткоины при помощи процессоров и видеокарт. Чтобы получать больше монет, майнеры собирали фермы из нескольких видеокарт. 
+
+        p
+            | В 2011-2013 годах использовали
+            | 
+            a(href="https://forklog.com/shag-nazad-pochemu-fpga-chipy-poluchili-novyj-shans-na-rynke-majninga/" target="_blank") FPGA
+            | 
+            | — программируемые пользователем вентильные матрицы. Фермы на базе таких устройств были производительными и энергоэффективными, но довольно дорогими и сложными в программировании.
+
+        p
+            | Цена биткоина экспоненциально росла и в 2012-2013 годах, незадолго до ралли к круглой отметке в $1000, стали появляться первые
+            | 
+            a(href="https://ru.bitcoinwiki.org/wiki/ASIC" target="_blank") ASIC
+            | -майнеры, заточенные уже исключительно для добычи криптовалют. Мощные и простые в использовании устройства моментально обрели популярность.
+
+        p
+            | Появление ASIC привело к стремительному взлету хешрейта и, соответственно, сложности. Майнинг распространенных в то время криптовалют на алгоритме
+            | 
+            a(href="https://forklog.com/chto-takoe-proof-of-work-i-proof-of-stake/" target="_blank") Proof-of-Work
+            | 
+            | (PoW) на чем-либо кроме специализированных чипов, стал невыгодным — стоимость потребляемой электроэнергии превышала средний результат.
+
+        .reveal_img.reveal_img--mobile
+            picture
+                source(srcset='./assets/img/popup/evolution_mobile@2x.png 2x, ./assets/img/popup/evolution_mobile.png 1x' media='(max-width: 639px)')
+                img(srcset="./assets/img/popup/evolution@2x.png 2x, ./assets/img/popup/evolution.png 1x" src="./assets/img/popup/evolution.png", alt="Эволюция устройств для майнинга")
+            figcaption.reveal_figure_caption
+                | Эволюция устройств для майнинга
+
+        p
+            | По данным
+            | 
+            a(href="https://en.bitcoin.it/wiki/Non-specialized_hardware_comparison#cite_note-amazon_20110625-1" target="_blank") Bitcoin Wiki
+            | , появившийся в 2009 году процессор Intel Core i7-950 мощностью 130 Ватт мог выдать хешрейт 18,9 Mhash/s.
+
+        p
+            | Хешрейт вышедшей в 2009 году видеокарты ATI Radeon HD 5770 мощностью в 106 Ватт составлял 154 Mhash/s. Для сравнения, задействованное для майнинга FPGA-устройство BitForce SHA256 Single при мощности 80 Ватт
+            | 
+            a(href="https://en.bitcoin.it/wiki/Mining_hardware_comparison" target="_blank") выдавало
+            | 
+            | 832 Mhash/s. 
+
+        p
+            | Выпущенный в 2013 году AntMiner S1 мощностью 360 Ватт обладал хешрейтом в 180 000 Mhash/s (180 GH/s), что эквивалентно 1186 видеокартам HD 5770 или 216 устройствам BitForce, либо же 9523 процессорам i7-950. 
+
+        p
+            | Согласно расчетам
+            | 
+            a(href="https://www.thegeekpub.com/11407/mining-bitcoin-gpu-2018/" target="_blank") The Geek Pub
+            | , хешрейт одного современного ASIC-устройства при майнинге биткоина примерно соответствует совокупной вычислительной мощности 400 видеокарт или 12 000 процессорам общей стоимостью около $18 млн.
+
+        p
+            | Во времена стремительного роста цены BTC участников рынка было меньше, а майнинг представлял собой весьма прибыльную деятельность. Не только внушительные по размерам компании, как сейчас, но и отдельные люди старались обзавестись вычислительными ресурсами, чтобы конкурировать между собой за вознаграждение по результатам решений PoW-задач.
+
+        blockquote.reveal_quote
+            | «В 2017 году был не просто спрос, а настоящее безумие — даже бабушки пытались заняться майнингом»
+            cite.reveal_quote_cite
+                | подчеркнули представители BitCluster.
+
+        p
+            | В современных условиях цена BTC повышается уже не так быстро, как в 2012-2013 или 2017 году. Тем не менее хешрейт и сложность растут.
+
+        p
+            | На графике ниже видно, что рост хешрейта биткоина продолжается и по сей день, несмотря на тенденцию к снижению рентабельности майнинговых операций, обусловленной уже не столь стремительным ростом цены:
+
+        .reveal_img
+            img(srcset="./assets/img/popup/hashrate@2x.png 2x, ./assets/img/popup/hashrate.png 1x" src="./assets/img/popup/hashrate.png", alt="Динамика хешрейта BTC")
+            figcaption.reveal_figure_caption
+                | Динамика хешрейта BTC с момента его появления. Данные:
+                | 
+                a(href="https://www.blockchain.com/ru/charts/hash-rate?timespan=all" target="_blank") blockchain.com
+
+        p
+            | Происходит это не только из-за роста числа валидаторов блоков, но и вследствие конкуренции между несколькими крупнейшими производителями майнеров. Последние постоянно модернизируют выпускаемые устройства, делая их не только мощнее, но и энергоэффективнее.
+
+        .reveal_block
+            h3.reveal_subheader(id=menu[3].sub[1].link.substr(1))
+                =menu[3].sub[1].title
+            p
+                | Устройства ASIC отличаются по алгоритму хеширования. ASIC-майнер поддерживает один алгоритм, поэтому при помощи ASIC для майнинга биткоина нельзя добывать ETH.
+
+            p
+                | Алгоритмы майнинга крупных криптовалют:
+
+            ul
+                li SHA-256 — Bitcoin, Bitcoin Cash, Bitcoin SV;
+                li Ethash — Ethereum;
+                li Scrypt — Litecoin.
+
+            p
+                | Три китайские компании
+                | 
+                a(href="https://news.bitcoin.com/mining-report-highlights-chinas-asic-manufacturing-improvements-and-dominance/" target="_blank") производят 73% ASIC
+                | :
+
+            ol
+                li
+                    | Bitmain —
+                    | 
+                    a(href="https://en.wikipedia.org/wiki/Bitmain" target="_blank") производит ASIC с 2013 года
+                    | . По
+                    | 
+                    a(href="https://www.coindesk.com/bitmain-by-the-numbers-an-inside-look-at-a-bitcoin-mining-empire" target="_blank") оценкам экспертов
+                    | , в 2018 году Bitmain выпускала от 75% до 85% всех ASIC для добычи криптовалют.
+                li
+                    | Canaan Creative — основана в 2013 году. Создала первый ASIC для майнинга биткоина Avalon A3256,
+                    | 
+                    a(href="https://www.nasdaq.com/market-activity/ipos/overview?dealId=1099600-90917" target="_blank") контролирует 21% от мирового производства ASIC
+                    | 
+                    | для майнинга.
+                li
+                    | Whatsminer — производит ASIC с 2017 года. ASIC этой компании популярны среди промышленных майнеров из Китая.
+                    | 
+                    a(href="https://news.8btc.com/more-chinese-bitcoin-miners-turn-to-whatsminer-for-high-powered-machines" target="_blank") Доля Whatsminer среди новых ASIC
+                    | 
+                    | — 35%.
+        .reveal_block
+            h3.reveal_subheader(id=menu[3].sub[2].link.substr(1))
+                =menu[3].sub[2].title
+            ol
+                li
+                    | Выбрать криптовалюту для майнинга.
+                li
+                    | Узнать стоимость электроэнергии.
+                li
+                    | Выбрать ASIC, записать его хешрейт и потребляемую мощность.
+                li
+                    | Посчитать прибыльность майнинга с помощью калькулятора. Введите тариф на электроэнергию, хешрейт и мощность ASIC-майнера, чтобы узнать примерную прибыль в долларах.
+
+            p
+                | Как работает калькулятор: 
+
+            ol
+                li
+                    | Делит хешрейт ASIC-майнера на хешрейт сети — сколько монет добудет ASIC за час майнинга.
+                li
+                    | Умножает добытые монеты на текущий курс криптовалюты к доллару — доход от майнинга.
+                li
+                    | Умножает потребляемую мощность ASIC на тариф — затраты на электроэнергию.
+                li
+                    | Отнимает стоимость электроэнергии от дохода с продажи криптовалюты — прибыль от майнинга.
+            
+            p.reveal_quote
+                | Интересный факт: прибыль от майнинга на Avalon А3256 при бесплатной электроэнергии —
+                | 
+                a(href="https://www.cryptocompare.com/mining/calculator/btc?HashingPower=60&HashingUnit=GH%2Fs&PowerConsumption=0&CostPerkWh=0.0&MiningPoolFee=1" target="_blank") $3,09
+                | 
+                | в год.
+
+        .reveal_block
+            h3.reveal_subheader(id=menu[3].sub[3].link.substr(1))
+                =menu[3].sub[3].title
+            p
+                a(href="https://ru.bitcoinwiki.org/wiki/Доходность_майнинга" target="_blank") Доходность майнинга
+                | 
+                | зависит от двух связанных между собой факторов:
+            ul
+                li
+                    | От сложности самого процесса майнинга. Чем сложнее процесс, тем больше нужно выполнить работы, чтобы получить вознаграждение;
+                li
+                    | От стоимости криптовалюты, то есть суммы вознаграждения в переводе на фиатные валюты.
+            p
+                | Наиболее очевидные варианты для увеличения доходности добычи криптовалюты это покупка более мощного ASIC-майнера и уменьшение затрат на электроэнергию.
+
+        .reveal_block
+            h3.reveal_subheader(id=menu[3].sub[4].link.substr(1))
+                =menu[3].sub[4].title
+            p
+                | По данным
+                | 
+                a(href="https://www.theblockcrypto.com/genesis/52834/a-look-back-at-2019-by-the-numbers" target="_blank") The Block
+                | , в прошлом году доход биткоин-майнеров превысил поступления добытчиков Ethereum более чем в 5 раз:
+
+            .reveal_img
+                img(srcset="./assets/img/popup/income_years@2x.png 2x, ./assets/img/popup/income_years.png 1x" src="./assets/img/popup/income_years.png", alt="Сравнение дохода майнеров")
+                figcaption.reveal_figure_caption
+                    | Сравнение дохода майнеров за 2015–2019 года в миллионах долларов.
+            p
+                | В 2018 разрыв в доходах Ethereum- и биткоин-майнеров был не таким большим, как в прошлом году.
+
+            p
+                | В 2019 майнеры первой криптовалюты получили $5 млрд дохода, а годом ранее — $5,25 млрд. Таким образом, несмотря на стремительно
+                | 
+                a(href="https://forklog.com/slozhnost-majninga-bitkoina-dostigla-absolyutnogo-maksimuma/" target="_blank") растущую сложность
+                | , доход снизился незначительно. Это, вероятно, связано с распространением более производительных устройств для майнинга и уверенным восстановлением цены BTC.
+
+            blockquote.reveal_quote
+                | «Сейчас, как и ранее, самым популярным алгоритмом является SHA-256, позволяющий, в частности, добывать биткоин» 
+                cite.reveal_quote_cite
+                    | отметил Сергей Арестов из BitCluster.
+            p
+                | Ethereum-майнеры в прошлом году добыли криптовалюту всего на $935,7 млн; в 2018 их доход составил $3,78 млрд. Таким образом, по итогам 2019 года снижение составило 75%.
+
+            .reveal_img
+                img(srcset="./assets/img/popup/income_ether@2x.png 2x, ./assets/img/popup/income_ether.png 1x" src="./assets/img/popup/income_ether.png", alt="Прибыль майнеров Ethereum")
+                figcaption.reveal_figure_caption
+                    | Прибыль майнеров Ethereum за год майнинга в миллиардах долларов.
+            p
+                | Деятельность Ethereum-майнеров достигала максимальной рентабельности в январе 2018 года — тогда был установлен исторический максимум цены близ отметки $1400. Вскоре после этого наступила пресловутая криптозима — большинство активов начали стремительно падать.
+
+            p
+                | Медвежий рынок длился на протяжении почти всего 2018 года, в течение которого Ethereum просел в цене гораздо сильнее, чем биткоин. Смена тренда с нисходящего на восходящий произошла в начале 2019 года, однако BTC восстанавливался значительно быстрее ETH:
+            
+            .reveal_img
+                img(srcset="./assets/img/popup/stat@2x.png 2x, ./assets/img/popup/stat.png 1x" src="./assets/img/popup/stat.png", alt="Восстановление BTC")
+                figcaption.reveal_figure_caption
+                    | В 2019 году BTC восстанавливался быстрее ETH. Источник:
+                    | 
+                    a(href="https://coinpaprika.com/longterm" target="_blank") CoinPaprika
+                    | 
+                    | по состоянию на 4.02.2020. 
+
+            p
+                | Столь неуверенный рост эфира и других PoW-альткоинов не мог не отразиться на рынке майнинга.
+
+            blockquote.reveal_quote
+                | «До 2017 года одним из самых распространенных устройств для майнинга был риг из нескольких 6-8 бытовых видеокарт, но прогресс и промышленные решения полностью вытеснили с рынка домашних и бытовых майнеров. Даже при нынешнем курсе добыча, например, Ethereum остается на грани рентабельности»
+                cite.reveal_quote_cite
+                    | констатируют эксперты из BitCluster.
+            p
+                | По их словам, клиенты компании предъявляют наибольший спрос на оборудование от Bitmain. Также довольно популярны майнеры от Innosilicon и Whatsminer.
+
+            p
+                | В таблице ниже сравнивается окупаемость популярных ASIC-устройств, подходящих для добычи биткоина, Ethereum и Litecoin
+
+            .reveal_img
+                img(srcset="./assets/img/popup/compare@2x.png 2x, ./assets/img/popup/compare.png 1x" src="./assets/img/popup/compare.png", alt="Восстановление BTC")
+                figcaption.reveal_figure_caption
+                    | Сравнительная таблица наиболее производительных майнеров для добычи BTC, ETH и LTC по состоянию на 6.02.2020 года.
+            p
+                | Как видно, добыча биткоина приносит больше прибыли, чем майнинг Ethereum и Litecoin. Окупаются BTC-майнеры примерно за полгода, что весьма привлекательно для инвесторов.
+
+            p
+                | Таким образом, биткоин — не только первая и по-прежнему наиболее
+                | 
+                a(href="https://coinmarketcap.com/charts/#dominance-percentage" target="_blank") капитализированная
+                | , но и самая популярная криптовалюта среди майнеров. Цифровое золото — наиболее ликвидный актив, цена которого растет быстрее множества альткоинов. Биткоин пользуется преимуществом первопроходца, от других монет его отличает более мощный
+                | 
+                a(href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D0%BE%D0%B9_%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82" target="_blank") сетевой эффект
+            | .
+
+    .reveal_footer
+        button.reveal_footer_map(data-close)
+            +icon('arrow', [8, 13])
+            | На карту
+        .reveal_footer_buttons
+            button.button.hollow(data-open="what-is-it")
+                | Назад
+            button.button.hollow(disabled)
+                | Вперед
+
+    button.dropdown_close(data-close)
+            +icon('cross', [10, 10])

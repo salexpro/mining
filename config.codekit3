@@ -15,7 +15,7 @@
 		"uuidString": "6DF9D747-8413-4879-B214-3F05CAB77409"
 		}
 	],
-"creatorBuild": "32001",
+"creatorBuild": "32137",
 "files": {
 	"/.browserslistrc": {
 		"cB": 0,
@@ -60,6 +60,14 @@
 		"oAP": "/docs/build.zip",
 		"oF": 1
 		},
+	"/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/CNAME",
+		"oF": 0
+		},
 	"/docs": {
 		"ft": 65536,
 		"oA": 1,
@@ -87,79 +95,79 @@
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/_animate.css",
+		"oAP": "/docs/node_modules/owl.carousel/src/css/_animate.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/node_modules/owl.carousel/src/scss/_autoheight.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/_autoheight.css",
+		"oAP": "/docs/node_modules/owl.carousel/src/css/_autoheight.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/node_modules/owl.carousel/src/scss/_core.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/_core.css",
+		"oAP": "/docs/node_modules/owl.carousel/src/css/_core.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/node_modules/owl.carousel/src/scss/_lazyload.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/_lazyload.css",
+		"oAP": "/docs/node_modules/owl.carousel/src/css/_lazyload.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/node_modules/owl.carousel/src/scss/_video.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/_video.css",
+		"oAP": "/docs/node_modules/owl.carousel/src/css/_video.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/node_modules/owl.carousel/src/scss/owl.carousel.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/owl.carousel/src/css/owl.carousel.css",
+		"oAP": "/docs/node_modules/owl.carousel/src/css/owl.carousel.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/node_modules/svg4everybody/dist/svg4everybody.js": {
 		"bF": 4,
@@ -167,7 +175,7 @@
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/build/node_modules/svg4everybody/dist/svg4everybody.min.js",
+		"oAP": "/docs/node_modules/svg4everybody/dist/svg4everybody.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -206,6 +214,14 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/robots.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/robots.txt",
+		"oF": 0
 		},
 	"/src/assets/favicon/android-chrome-192x192.png": {
 		"ft": 32768,
@@ -351,6 +367,28 @@
 		"oAP": "/docs/assets/fonts/.gitkeep",
 		"oF": 0
 		},
+	"/src/assets/img/benefits/antminer.png": {
+		"ft": 32768,
+		"iS": 53833,
+		"oA": 0,
+		"oAP": "/docs/assets/img/benefits/antminer.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/benefits/antminer@2x.png": {
+		"ft": 32768,
+		"iS": 167125,
+		"oA": 0,
+		"oAP": "/docs/assets/img/benefits/antminer@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/benefits/decenter.png": {
 		"ft": 32768,
 		"iS": 41032,
@@ -433,6 +471,28 @@
 		"iS": 203452,
 		"oA": 0,
 		"oAP": "/docs/assets/img/benefits/emission_mobile@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/benefits/innnosilicon.png": {
+		"ft": 32768,
+		"iS": 93379,
+		"oA": 0,
+		"oAP": "/docs/assets/img/benefits/innnosilicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/benefits/innnosilicon@2x.png": {
+		"ft": 32768,
+		"iS": 311684,
+		"oA": 0,
+		"oAP": "/docs/assets/img/benefits/innnosilicon@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -812,6 +872,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/popup/compare.png": {
+		"ft": 32768,
+		"iS": 29904,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/compare.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/compare@2x.png": {
+		"ft": 32768,
+		"iS": 67459,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/compare@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/popup/customs.png": {
 		"ft": 32768,
 		"iS": 18902,
@@ -856,6 +938,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/popup/evolution.png": {
+		"ft": 32768,
+		"iS": 103165,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/evolution.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/evolution@2x.png": {
+		"ft": 32768,
+		"iS": 342746,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/evolution@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/evolution_mobile.png": {
+		"ft": 32768,
+		"iS": 112218,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/evolution_mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/evolution_mobile@2x.png": {
+		"ft": 32768,
+		"iS": 366355,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/evolution_mobile@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/popup/graph.png": {
 		"ft": 32768,
 		"iS": 16282,
@@ -872,6 +998,72 @@
 		"iS": 38804,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/graph@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/hashrate.png": {
+		"ft": 32768,
+		"iS": 11491,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/hashrate.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/hashrate@2x.png": {
+		"ft": 32768,
+		"iS": 27094,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/hashrate@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/income_ether.png": {
+		"ft": 32768,
+		"iS": 5950,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/income_ether.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/income_ether@2x.png": {
+		"ft": 32768,
+		"iS": 13676,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/income_ether@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/income_years.png": {
+		"ft": 32768,
+		"iS": 11736,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/income_years.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/income_years@2x.png": {
+		"ft": 32768,
+		"iS": 28847,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/income_years@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -966,6 +1158,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/popup/stat.png": {
+		"ft": 32768,
+		"iS": 21599,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/stat.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/stat@2x.png": {
+		"ft": 32768,
+		"iS": 50246,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/stat@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/popup/taxes.jpg": {
 		"ft": 16384,
 		"iS": 23658,
@@ -1029,14 +1243,6 @@
 		"opt": 1,
 		"plM": 1103269715967,
 		"prP": 0
-		},
-	"/src/CNAME": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/docs/CNAME",
-		"oF": 0
 		},
 	"/src/favicon.ico": {
 		"cB": 0,
@@ -1256,6 +1462,26 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/items/_firstSteps.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/_firstSteps.html",
+		"oF": 1,
+		"oS": 0
+		},
+	"/src/pug/items/_whatToMine.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/_whatToMine.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/index.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1286,182 +1512,174 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/robots.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/docs/robots.txt",
-		"oF": 1
-		},
 	"/src/scss/_settings.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/css/_settings.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/app.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/docs/css/app.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/components/_base.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_base.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/components/_button.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_button.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/components/_dropdown.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_dropdown.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/components/_fonts.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_fonts.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/components/_menu.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_menu.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/components/_offcanvas.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_offcanvas.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/components/_owl.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_owl.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/components/_popup.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_popup.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/sections/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_footer.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/sections/_header.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_header.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/src/scss/sections/_map.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/docs/scss/css/_map.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		}
 	},
 "hooks": [
@@ -1474,7 +1692,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 609362129.39803696
+	"lastBuiltDate": 609624895.77453899
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3443,13 +3661,13 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 2,
+		"compilerType": 1,
 		"createSourceMap": 1,
-		"debugStyle": 0,
 		"decimalPrecision": 10,
+		"emitCharset": 1,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 1
+		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
 		"autoOutputAction": 0,

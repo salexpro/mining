@@ -22,64 +22,46 @@
                 {
                     title: 'Что такое майнинг',
                     link: '#what-is-minig',
-                    attrs: {
-                        'data-open': 'what-is-it',
-                    },
                 },
                 {
                     title: 'Зачем нужен майнинг',
                     link: '#what-for',
-                    attrs: {
-                        'data-open': 'what-is-it'
-                    },
                 },
                 {
                     title: 'Какие бывают виды майнинга',
                     link: '#kinds-of-mining',
-                    attrs: {
-                        'data-open': 'what-is-it'
-                    },
                 },
                 {
                     title: 'Как майнят криптовалюты на Proof-of-Work',
                     link: '#proof-of-work',
-                    attrs: {
-                        'data-open': 'what-is-it'
-                    },
                 },
                 {
                     title: 'Как майнят на Proof-of-Stake',
                     link: '#proof-of-stake',
-                    attrs: {
-                        'data-open': 'what-is-it'
-                    },
                 },
                 {
                     title: 'На чем майнят криптовалюту',
                     link: '#how-to-mine',
-                    attrs: {
-                        'data-open': 'what-is-it'
-                    },
                 },
                 {
                     title: 'Где располагаются мировые майнинговые центры',
                     link: '#where-is-it',
-                    attrs: {
-                        'data-open': 'what-is-it'
-                    },
                 }
             ]
         },
         {
             title: 'Путешествие на майнинг ферму',
-            // link: '#video',
+            link: '#video',
             attrs: {
                 'data-video': '88aWYwcrfMI'
             }
         },
         {
             title: 'Что майнить: почему<br>майнеры отдают предпочтение биткоину',
-            // link: '#',
+            link: '#what-to-mine',
+            attrs: {
+                'data-open': 'what-to-mine'
+            },
             position: {
                 h: 'right',
                 v: 'top'
@@ -91,23 +73,23 @@
             sub: [
                 {
                     title: 'Об эволюции майнинга биткоина',
-                    link: '#', 
+                    link: '#bitcoin-evolution', 
                 },
                 {
                     title: 'Какими бывают ASIC-майнеры',
-                    link: '#', 
+                    link: '#asic-miners', 
                 },
                 {
                     title: 'Как начать майнить при помощи ASIC',
-                    link: '#', 
+                    link: '#asic-start', 
                 },
                 {
                     title: 'Как увеличить доходность майнинга',
-                    link: '#', 
+                    link: '#yield-increase', 
                 },
                 {
                     title: 'Почему большинство майнеров предпочитает биткоин',
-                    link: '#', 
+                    link: '#why-bitcoin', 
                 },
             ]
         },
@@ -220,13 +202,13 @@ mixin menu()
     ul.menu.vertical.accordion-menu&attributes(attributes)
         each item in menu
             li
-                #{item.link ? 'a' : 'span'}(href=item.link || false)&attributes(!item.sub ? item.attrs : {})
+                #{item.link ? 'a' : 'span'}(href=item.link || false)&attributes(!item.sub && item.link ? item.attrs : {})
                     !=item.title
                     span.menu_icon
                 if item.sub
                     ul.menu.vertical.nested
                         each subitem in item.sub
                             li
-                                a(href=subitem.link)&attributes(subitem.attrs)
+                                a(href=subitem.link)&attributes(item.attrs)
                                     =subitem.title
 
