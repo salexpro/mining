@@ -4,6 +4,7 @@
     text-align: right;
     display: flex;
     align-items: flex-end;
+    line-height: 1.16;
     li{
         position: relative;
         + li {
@@ -55,6 +56,7 @@
             color: #545454;
             display: inline-block;
             cursor: not-allowed;
+            // line-height: normal;
             ~ ::after{
                 background: red;
             }
@@ -63,7 +65,7 @@
     a {
         padding: 0;
         color: $white;
-        line-height: normal;
+        line-height: 1.16;
         outline: none;
         &:hover, &:focus{
             color: $secondary-color;
