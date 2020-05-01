@@ -43,8 +43,8 @@ $('.dropdown--point').each(function(){
     new Foundation.Dropdown($(this), {
         hover: true,
         hoverPane: true,
-        position: isMobile ? 'auto' : $(this).data('position') || 'right',
-        alignment: isMobile ? 'auto' : $(this).data('alignment') || 'center',
+        position: isMobile ? ($(this).data('position-mobile') || 'auto') : $(this).data('position') || 'center',
+        alignment: isMobile ? 'auto' : ($(this).data('alignment') || 'right'),
         vOffset: isMobile ? 20 : $(this).data('vOffset') || 0,
         hOffset: isMobile ? 0 : $(this).data('hOffset') || 0,
         closeOnClick: true

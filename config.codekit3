@@ -15,7 +15,7 @@
 		"uuidString": "6DF9D747-8413-4879-B214-3F05CAB77409"
 		}
 	],
-"creatorBuild": "32137",
+"creatorBuild": "32147",
 "files": {
 	"/.browserslistrc": {
 		"cB": 0,
@@ -51,6 +51,17 @@
 		"oF": 1,
 		"sC": 3,
 		"tS": 1
+		},
+	"/bg_top.jpg": {
+		"ft": 16384,
+		"iS": 3268,
+		"jF": 2,
+		"oA": 0,
+		"oAP": "/docs/bg_top.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
 		},
 	"/build.zip": {
 		"cB": 0,
@@ -1070,6 +1081,50 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/popup/manufacturers.png": {
+		"ft": 32768,
+		"iS": 18810,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/manufacturers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/manufacturers@2x.png": {
+		"ft": 32768,
+		"iS": 41419,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/manufacturers@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/manufacturers_mobile.png": {
+		"ft": 32768,
+		"iS": 18102,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/manufacturers_mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/manufacturers_mobile@2x.png": {
+		"ft": 32768,
+		"iS": 38837,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/manufacturers_mobile@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/popup/map.png": {
 		"ft": 32768,
 		"iS": 43280,
@@ -1472,6 +1527,16 @@
 		"oF": 1,
 		"oS": 0
 		},
+	"/src/pug/items/_howToBuy.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/_howToBuy.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/items/_whatToMine.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1486,11 +1551,11 @@
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
-		"hM": 0,
+		"hM": 1,
 		"oA": 0,
 		"oAP": "/docs/index.html",
 		"oF": 0,
-		"oS": 0
+		"oS": 1
 		},
 	"/src/pug/sections/_footer.pug": {
 		"cB": 1,
@@ -1692,7 +1757,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 609873406.60311496
+	"lastBuiltDate": 610065641.38504696
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

@@ -2,6 +2,7 @@ each item, i in menu
     if item.link && item.sub && i
         .dropdown.dropdown--point(id=`pointPopup${i}` 
             data-position=item.position ? item.position.h : 'right'
+            data-position-mobile=item.positionMobile ? item.positionMobile.v : false
             data-alignment=item.position ? item.position.v : 'center'
             data-vOffset=item.offset ? item.offset.v : '0'
             data-hOffset=item.offset ? item.offset.h : '0')
@@ -22,6 +23,7 @@ each item, i in menu
 
 include ../items/_firstSteps
 include ../items/_whatToMine
+include ../items/_howToBuy
 
 #video.reveal.large.reveal--video(data-reveal data-animation-in="fade-in" data-animation-out="fade-out")
     .responsive-embed.reveal_video
