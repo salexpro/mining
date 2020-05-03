@@ -1,6 +1,6 @@
 /* global $, Foundation */
 
-import hints from '../data/miner';
+import hints from '../data/_miner';
 
 const offset = {
     xlarge: {
@@ -64,7 +64,7 @@ const minerHint = (hint, delay) => {
 let hintIdx = 2;
 
 const nextHint = () => {
-    if (!$('.dropdown--point').hasClass('is-open') && !$('.dropdown--miner').is(':hover')){
+    if (!$('.dropdown--point').hasClass('is-open') && !$('.dropdown--hotel').hasClass('is-open') && !$('.dropdown--miner').is(':hover')){
         const hint = hints[hintIdx];
         $('#minerPopup').foundation('close')
         minerHint(hint, 300);

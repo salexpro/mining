@@ -8,6 +8,7 @@ import './components/_countdown';
 import './components/_anim';
 import './components/_scroll';
 import './components/_subscribe';
+import './components/_map';
 
 svg4everybody();
 

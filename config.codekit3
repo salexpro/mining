@@ -748,6 +748,38 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/map_hostel.png": {
+		"ft": 32768,
+		"iS": 115060,
+		"oA": 0,
+		"oAP": "/docs/assets/img/map_hostel.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/map_hostel@2x.png": {
+		"ft": 32768,
+		"iS": 279328,
+		"oA": 0,
+		"oAP": "/docs/assets/img/map_hostel@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/map_hostel_points.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/img/map_hostel_points.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 0
+		},
 	"/src/assets/img/miner.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -1351,6 +1383,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/src/js/components/_map.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/docs/js/components/_map.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/src/js/components/_miner.js": {
 		"bF": 4,
 		"ft": 64,
@@ -1406,10 +1449,18 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/src/js/data/miner.json": {
+	"/src/js/data/_hotels.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "/docs/js/data/miner.json",
+		"oAP": "/docs/js/data/_hotels.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 0
+		},
+	"/src/js/data/_miner.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/docs/js/data/_miner.json",
 		"oF": 1,
 		"oO": 0,
 		"oS": 0
@@ -1534,6 +1585,16 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/docs/_howToBuy.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/items/_map.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/_map.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1757,7 +1818,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 610065641.38504696
+	"lastBuiltDate": 610207915.21441102
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

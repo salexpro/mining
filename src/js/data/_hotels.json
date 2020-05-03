@@ -1,0 +1,160 @@
+{
+    "a-xbt": {
+        "name": "A-XBT",
+        "descr": "Майнинг-отель (3,6 рублей за кВт/час), производство майнинг-контейнеров",
+        "link": "https://a-xbt.com/ru/mininghotel"
+    },
+    "minecool": {
+        "name": "MineCool",
+        "descr": "Хостинг (от 2,5 до 3,5 рубля кВт/час), ремонт, обслуживание, охрана",
+        "link": "https://minecool.ru/hosting"
+    },
+    "miner_world": {
+        "name": "Miner World",
+        "descr": "Хостинг (от 3 до 3,2 рубля кВт/час), продажа оборудования, ремонт",
+        "link": "https://minerhotel24.ru/"
+    },
+    "umc": {
+        "name": "UMC",
+        "descr": "Майнинг-отель (от 3 рублей за кВт/час). Ремонт оборудования, майнинг-контейнеры",
+        "link": "https://umcbit.ru/"
+    },
+    "miner-park": {
+        "name": "Майнер-парк",
+        "descr": "Майнинг-отель (от 2,8 рубля до 3,5 рубля за кВт/час), поставка оборудования, майнинг-контейнеры",
+        "link": "https://dva-a.ru/"
+    },
+    "ecos-hosting": {
+        "name": "Ecos-hosting",
+        "descr": "Хостинг (от 3,06 рубля за за кВт/час с НДС)",
+        "link": "https://ecos-hosting.com/"
+    },
+    "mineinvest": {
+        "name": "MineInvest",
+        "descr": "Хостинг (2,78 рубля за за кВт/час с НДС), продажа и ремонт оборудования",
+        "link": "https://mineinvest.ru/"
+    },
+    "crypto-mainer": {
+        "name": "Crypto-mainer",
+        "descr": "Размещение контейнеров в технопарке г. Клин (2,9 рубяля кВт/час)",
+        "link": "https://crypto-mainer.ru/"
+    },
+    "mining-hotel": {
+        "name": "Mining-hotel",
+        "descr": "Майнинг-отель (9,5 рубля за кВт/час)",
+        "link": "https://mining-hotel.moscow/"
+    },
+    "itcsr": {
+        "name": "ИТЦСР",
+        "descr": "Майнинг-отель (от 2500 до 5000 рублей за устройство в месяц)",
+        "link": "https://www.itcsr.ru/mining-hotel/"
+    },
+    "pimnara": {
+        "name": "Pimnara",
+        "descr": "Майнинг-отель (5 рублей кВт/час), ремонт оборудования",
+        "link": "https://www.pimnara.ru/news/mayning_otel/"
+    },
+    "mineinvest_msk": {
+        "name": "MineInvest ",
+        "descr": "Хостинг (3,5 рубля за кВт/час), продажа и ремонт оборудования",
+        "link": "https://mineinvest.ru/"
+    },
+    "xmining": {
+        "name": "Xmining",
+        "descr": "Хостинг (от 3,5 рубля за кВт/час), продажа и ремонт оборудования",
+        "link": "https://xmining.ru/"
+    },
+    "ibmm_msk": {
+        "name": "IBMM",
+        "descr": "Майнинг-отель (от 3 до 3,5 за кВт/час)",
+        "link": "https://ibmm.ru"
+    },
+    "mining_spb": {
+        "name": "Mining SPB",
+        "descr": "Майнинг-отель (6 рублей кВт/час)",
+        "link": " https://mining-spb.com/"
+    },
+    "cryptouniverse_spb": {
+        "name": "CryptoUniverse",
+        "descr": "Майнинг-отель в г. Кириши (от 2 рублей за кВт/час), ремонт, продажа оборудования"
+    },
+    "mining-otel": {
+        "name": "Майнинг-отель",
+        "descr": "(3,9 рубля кВт/час)",
+        "link": "https://mininghotel.ru/"
+    },
+    "crypton": {
+        "name": "Crypton",
+        "descr": "Майнинг-отель (3,2 рубля кВт/час)"
+    },
+    "goose2mining": {
+        "name": "Goose2mining",
+        "descr": "Майнинг-отель (от 2,99 рубля кВт/час)",
+        "link": "https://goose2mining.club/"
+    },
+    "satoshi_miner": {
+        "name": "Satoshi miner",
+        "descr": "Майнинг-отель (от 4,5 рубля кВт/час + 4% от майнинга)",
+        "link": "https://satoshi-miner.ru/hotel"
+    },
+    "cryptoreactor": {
+        "name": "Сryptoreactor",
+        "descr": "Майнинг-отель (от 2,7 рубля кВт/час)",
+        "link": "https://cryptoreactor.ru/"
+    },
+    "bitriver": {
+        "name": "Bitriver",
+        "descr": "Хостинг (3,5 рубля кВт/час), ремонт оборудования",
+        "link": "https://bitriver.farm/"
+    },
+    "bitcluster": {
+        "name": "Bitcluster",
+        "descr": "Хостинг (3 рубля кВт/час)",
+        "link": "https://bitcluster.ru/"
+    },
+    "rezone_pro": {
+        "name": "Rezone Pro",
+        "descr": "Майнинг-отель (от 2,7 рубля кВт/час), ремонт оборудования",
+        "link": "https://mhotel.rezone.pro/"
+    },
+    "rk1": {
+        "name": "RK1",
+        "descr": "Майнинг-отель (от 4420 до 8320 рублей за устройство в месяц)",
+        "link": "https://rk1.ru/asic/"
+    },
+    "asic66": {
+        "name": "Asic 66",
+        "descr": "Майнинг-отель (от 3000 до 7000 рублей за устройство в месяц), ремонт, продажа оборудования",
+        "link": "http://asic66.ru/"
+    },
+    "trading_union": {
+        "name": "Trading Union",
+        "descr": "Хостинг (3,3 рубля кВт/час), ремонт, продажа оорудования",
+        "link": "https://tradingunion.store"
+    },
+    "directcoin": {
+        "name": "DirectCoin",
+        "descr": "Майнинг-отель (от 3 до 4,5 рубля кВт/час), ремонт оборудования",
+        "link": "https://directcoin.ru/"
+    },
+    "cryptouniverse_kar": {
+        "name": "CryptoUniverse",
+        "descr": "Майнинг-отель в г. Надвоицы (от 2 рублей за кВт/час), ремонт, продажа оборудования",
+        "link": "https://cu.market"
+    },
+    "omh": {
+        "name": "Official Mining Holding",
+        "descr": "Майнинг-отель (2,8 рубля кВт/час), ремонт оборудования",
+        "link": "https://omholding.ru/"
+    },
+    "lazm": {
+        "name": "LAZM",
+        "descr": "Майнинг-отель (2,95 рубля кВт/час), продажа и ремонт оборудования",
+        "link": "https://lazm.io/"
+    },
+    "ibmm_srt": {
+        "name": "IBMM",
+        "descr": "Майнинг-отель (3,5 рубля за кВт/час)",
+        "link": "https://ibmm.ru/"
+    }
+}

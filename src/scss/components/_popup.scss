@@ -1,8 +1,8 @@
-.reveal{
+.reveal {
     outline: none;
     font-size: 14px;
     letter-spacing: 0.02em;
-    &[aria-hidden]:not(.reveal--video){
+    &[aria-hidden]:not([class*='reveal--']) {
         display: block !important;
         top: 0 !important;
     }
@@ -14,22 +14,22 @@
     //     left: 10px;
     //     width: calc(100% - 20px);
     // }
-    @include breakpoint(small down){
+    @include breakpoint(small down) {
         padding: 30px 15px 0;
     }
-    &.large{
+    &.large {
         width: 60%;
-        @include breakpoint(large down){
+        @include breakpoint(large down) {
             width: 80%;
         }
-        @include breakpoint(small down){
+        @include breakpoint(small down) {
             width: 95%;
             height: auto;
             min-height: auto;
             margin: auto;
         }
     }
-    &-overlay{
+    &-overlay {
         // overflow: auto;
         display: block !important;
         opacity: 0;
@@ -37,45 +37,45 @@
         transition: opacity 300ms, visibility 300ms !important;
         padding: 35px 0;
         // backdrop-filter: blur(4px);
-        &[style]:not([style*="none"]){
+        &[style]:not([style*='none']) {
             opacity: 1 !important;
             visibility: visible;
         }
-        @include breakpoint(small down){
+        @include breakpoint(small down) {
             padding: 0;
         }
     }
 
-    &_header{
+    &_header {
         font-size: 21px;
         line-height: 1.1;
         font-weight: 700;
         margin-bottom: 20px;
     }
-    &_subheader{
+    &_subheader {
         font-size: 18px;
         line-height: 1.16;
         font-weight: 500;
         margin-bottom: 20px;
         padding-top: 10px;
     }
-    p{
+    p {
         margin-bottom: 20px;
         @extend %link;
     }
 
-    .button{
+    .button {
         font-size: 14px;
         padding: 7px 10px;
         font-weight: 400;
     }
 
-    &_list{
+    &_list {
         margin: 0 0 10px;
         list-style: none;
         font-weight: 700;
         line-height: 1.9;
-        li{
+        li {
             padding-bottom: 2px;
         }
         a {
@@ -83,7 +83,7 @@
             position: relative;
             border-bottom: 1px dashed transparent;
             padding-bottom: 2px;
-            &:after{
+            &:after {
                 content: '';
                 position: absolute;
                 width: 100%;
@@ -91,18 +91,17 @@
                 bottom: 0;
                 transition: border-color 250ms;
             }
-            &:hover, &:focus{
-                color: #7F7550;
-                border-color: #7F7550;
-                &:after{
-                }
+            &:hover,
+            &:focus {
+                color: #7f7550;
+                border-color: #7f7550;
             }
         }
     }
 
-    &_block{
+    &_block {
         position: relative;
-        &::before{
+        &::before {
             content: '';
             display: block;
             margin-left: -35px;
@@ -111,12 +110,12 @@
             padding-bottom: 5.6%;
             background-image: url(../assets/img/wave.svg);
             margin-bottom: 5px;
-            @include breakpoint(small down){
+            @include breakpoint(small down) {
                 width: calc(100% + 30px);
                 margin-left: -15px;
             }
         }
-        &:after{
+        &:after {
             content: '';
             position: absolute;
             top: 0;
@@ -124,42 +123,42 @@
             width: calc(100% + 70px);
             height: 0;
             padding-bottom: 34.21%;
-            background: linear-gradient(0deg, $white 0%, #F4F4F4 100%);
+            background: linear-gradient(0deg, $white 0%, #f4f4f4 100%);
             z-index: -1;
-            @include breakpoint(small down){
+            @include breakpoint(small down) {
                 left: -15px;
                 width: calc(100% + 30px);
             }
         }
     }
-    &_benefits{
+    &_benefits {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 25px;
         margin-bottom: 20px;
-        &--small{
+        &--small {
             grid-template-columns: repeat(2, 1fr);
             column-gap: 20px;
-            .reveal_benefit_text{
+            .reveal_benefit_text {
                 font-size: 12px;
                 margin-top: 11px;
                 line-height: 1.7;
             }
         }
-        @include breakpoint(small down){
+        @include breakpoint(small down) {
             grid-template-columns: auto;
             row-gap: 30px;
         }
     }
-    &_benefit{
-        &:first-child .reveal_benefit_img{
+    &_benefit {
+        &:first-child .reveal_benefit_img {
             padding: 2.5px 0;
-            @include breakpoint(small down){
+            @include breakpoint(small down) {
                 padding: 0;
             }
         }
-        &_img{
-            @include breakpoint(small down){
+        &_img {
+            @include breakpoint(small down) {
                 text-align: center;
                 // img{
                 //     width: 100%;
@@ -167,26 +166,26 @@
                 // }
             }
         }
-        &_header{
+        &_header {
             display: block;
             margin-bottom: 5px;
         }
-        &_text{
+        &_text {
             margin-top: 25px;
-            @include breakpoint(small down){
+            @include breakpoint(small down) {
                 margin-top: 10px;
             }
         }
     }
-    &_link{
+    &_link {
         display: flex;
         margin-left: -35px;
         padding: 20px 30px 20px 35px;
         // padding-left: 35px;
-        background: #F4F4F4;
+        background: #f4f4f4;
         border-radius: 0px 0px 24px 0px;
         width: calc(100% + 20px);
-        @include breakpoint(small down){
+        @include breakpoint(small down) {
             display: block;
             margin-left: -15px;
             width: calc(100% + 10px);
@@ -198,136 +197,138 @@
         + p {
             margin-top: 20px;
         }
-        &_img{
+        &_img {
             flex: 0 0 auto;
             margin-right: 22px;
             max-width: 180px;
-            @include breakpoint(small down){
+            @include breakpoint(small down) {
                 margin: 0 0 10px;
                 max-width: none;
-                img{
+                img {
                     width: 100%;
                 }
             }
         }
-        &_content{
-            .button{
+        &_content {
+            .button {
                 display: table;
                 margin-left: auto;
                 min-width: 192px;
                 margin-top: 18px;
-                @include breakpoint(small down){
+                @include breakpoint(small down) {
                     margin-top: 10px;
                 }
             }
         }
     }
-    &_quote{
+    &_quote {
         padding: 20px 20px 20px 35px;
-        background: #F4F4F4;
+        background: #f4f4f4;
         margin-left: -35px;
         border-radius: 0px 0px 24px 0px;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.4;
         @extend %link;
-        @include breakpoint(small down){
+        @include breakpoint(small down) {
             margin-left: -15px;
             width: calc(100% + 10px);
             padding: 20px 15px;
         }
-        &_cite{
+        &_cite {
             font-style: normal;
             font-weight: 400;
             margin-top: 20px;
         }
     }
-    &_table{
+    &_table {
         font-size: 12px;
         // width: calc(100% + 70px);
         border-spacing: 0;
         table-layout: fixed;
         position: relative;
-        &_overflow{
+        &_overflow {
             margin: 0 -35px;
             overflow: auto;
             padding-bottom: 20px;
             margin-bottom: 15px;
             -webkit-overflow-scrolling: touch;
-            @include breakpoint(small down){
+            @include breakpoint(small down) {
                 margin: 0 -15px 15px;
             }
         }
-        @include breakpoint(small down){
+        @include breakpoint(small down) {
             width: 550px;
             table-layout: auto;
         }
-        &::before, &::after{
+        &::before,
+        &::after {
             content: '';
             position: absolute;
             left: 0;
             top: 0;
             height: 100%;
             width: 24%;
-            background: linear-gradient(0deg, $white 0%, #F4F4F4 100%);
+            background: linear-gradient(0deg, $white 0%, #f4f4f4 100%);
             z-index: -1;
         }
-        &::after{
+        &::after {
             width: 31%;
             left: auto;
             right: 24%;
-            @include breakpoint(small down){
+            @include breakpoint(small down) {
                 right: 24%;
             }
         }
-        th{
+        th {
             font-weight: 500;
         }
-        th, td{
+        th,
+        td {
             text-align: left;
             padding: 16px;
-            &:first-child{
+            &:first-child {
                 width: 24%;
                 padding-left: 35px;
-                @include breakpoint(small down){
+                @include breakpoint(small down) {
                     padding-left: 15px;
                 }
             }
-            &:nth-child(2){
+            &:nth-child(2) {
                 width: 21%;
             }
-            &:last-child{
+            &:last-child {
                 width: 24%;
                 padding-right: 35px;
-                @include breakpoint(small down){
+                @include breakpoint(small down) {
                     padding-right: 15px;
                 }
             }
         }
-        b{
+        b {
             color: #342f1c;
         }
         @extend %link;
-        &_descr{
+        &_descr {
             line-height: 1.7;
             font-size: 12px;
         }
     }
-    &_figure{
+    &_figure {
         margin-top: 32px;
         margin-bottom: 20px;
-        &_caption{
+        &_caption {
             margin-top: 20px;
             font-size: 12px;
             @extend %link;
         }
     }
-    &_cons{
+    &_cons {
         list-style: none;
         margin: 0 0 20px;
-        text-align: center;     
-        li{
-            border: 1px solid #D2D2D2;
+        text-align: center;
+        li {
+            border: 1px solid #d2d2d2;
             border-radius: 5px;
             padding: 20px 24px;
             + li {
@@ -336,7 +337,7 @@
         }
         @extend %link;
     }
-    &_img{
+    &_img {
         border-radius: 0px 0px 24px 0px;
         margin-left: -35px;
         // padding-left: 35px;
@@ -344,96 +345,144 @@
         margin-bottom: 20px;
         overflow: hidden;
         // min-height: 320px;
-        @include breakpoint(small down){
-            margin-left: -15px;   
+        @include breakpoint(small down) {
+            margin-left: -15px;
         }
-        &--mobile{
-            @include breakpoint(small down){
+        &--mobile {
+            @include breakpoint(small down) {
                 width: calc(100% + 30px);
                 margin-right: -15px;
             }
         }
-        img{
+        img {
             width: 100%;
         }
-        .reveal_figure_caption{
+        .reveal_figure_caption {
             margin-top: 15px;
             margin-left: 35px;
-            @include breakpoint(small down){
+            @include breakpoint(small down) {
                 margin-left: 15px;
             }
         }
     }
-    &_footer{
+    &_footer {
         margin: 0 -35px 0;
         padding: 25px 35px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: #E8E8E8;
-        @include breakpoint(small down){
+        background: #e8e8e8;
+        @include breakpoint(small down) {
             margin: 0 -15px 0;
             padding: 20px 15px;
         }
-        &_map{
+        &_map {
             display: flex;
             align-items: center;
             font-size: 16px;
-            @include breakpoint(small down){
+            @include breakpoint(small down) {
                 font-size: 12px;
             }
-            svg{
+            svg {
                 margin-right: 12px;
             }
         }
-        &_buttons{
+        &_buttons {
             display: flex;
-            .button{
+            .button {
                 font-weight: 400;
                 min-width: 144px;
-                @include breakpoint(small down){
+                @include breakpoint(small down) {
                     min-width: auto;
                     padding: 7px 18px;
                     font-size: 12px;
                 }
-                + .button{
+                + .button {
                     margin-left: 17px;
                 }
             }
         }
     }
 
-    ul, ol{
-        &:not(.reveal_list){
+    ul,
+    ol {
+        &:not(.reveal_list) {
             @extend %link;
         }
     }
 
-    &--video{
+    &--video {
         border-radius: 3px;
         padding: 14px;
-        @include breakpoint(small down){
+        @include breakpoint(small down) {
             padding: 10px;
         }
     }
-    &--map{
+    &--map {
         background-color: #afa273;
         box-shadow: 0 4px 10px rgba(101, 83, 20, 0.2), 0 2px 4px rgba(46, 30, 0, 0.15);
-        padding: 20px 0;
-        .reveal_header{
+        padding: 20px 0 0;
+        flex-direction: column;
+        &[data-ut]{
+            display: flex !important;
+        }
+        &.large {
+            max-width: 906px;
+            @include breakpoint(small down) {
+                width: 100%;
+                // top: 0 !important;
+                height: 100%;
+            }
+        }
+        .reveal_header {
             font-size: 31px;
             margin-left: 40px;
+            margin-right: 30px;
             color: $white;
+            @include breakpoint(small down) {
+                font-size: 21px;
+                margin-left: 15px;
+            }
+        }
+    }
+    &_map {
+        width: 100%;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        flex: 1 1 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        svg {
+            width: 906px;
+            height: 527px;
+            stroke: #524A2D;
+            fill: $white;
+            background: url('../assets/img/map_hostel.png');
+            background-size: cover;
+            @include breakpoint(retina){
+                background-image: url('../assets/img/map_hostel@2x.png');
+            }
+        }
+        &_point{
+            cursor: pointer;
+            padding: 10px;
+            transition: fill 300ms;
+            circle{
+                fill: #D7C99C;
+            }
+            &:hover, &:focus, &.active{
+                fill: #524A2C;
+            }
         }
     }
 
-    .dropdown_close{
-        @include breakpoint(small down){
+    .dropdown_close {
+        @include breakpoint(small down) {
             position: fixed;
             margin: 10px;
         }
     }
-
 
     &.fade-in.mui-enter {
         transform: translate3d(0, -18px, 0) perspective(435px) rotateX(8deg);
@@ -451,7 +500,7 @@
 }
 
 .fade-in.mui-enter {
-    transition: all 200ms ease-out !important;
+    transition: opacity 200ms ease-out, transform 200ms ease-out;
     opacity: 0;
     &.mui-enter-active {
         opacity: 1;
@@ -459,7 +508,7 @@
 }
 
 .fade-out.mui-leave {
-    transition: all 200ms ease-in !important;
+    transition: opacity 200ms ease-in, transform 200ms ease-in;
     opacity: 1;
     &.mui-leave-active {
         opacity: 0;

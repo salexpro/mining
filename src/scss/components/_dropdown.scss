@@ -32,25 +32,14 @@
         border-radius: 3px;
         z-index: -1;
     }
-    &.has-position-right{
-        &::before{
-            left: -18px;
-            border-left-color: transparent;
-            border-bottom-color: transparent;
-        }
-    }
-    &.has-position-left{
-        &::before{
-            right: -18px;
-            border-right-color: transparent;
-            border-bottom-color: transparent;
-        }
-    }
     &--point{
         z-index: 5;
         @include breakpoint(small down){
             left: 50% !important;
             transform: translateX(-50%);
+            &::before {
+                display: none;
+            }
         }
         .dropdown{
             &_header{
@@ -66,6 +55,20 @@
                 margin-top: 14px;
             }
         }
+        &.has-position-right{
+            &::before{
+                left: -18px;
+                border-left-color: transparent;
+                border-bottom-color: transparent;
+            }
+        }
+        &.has-position-left{
+            &::before{
+                right: -18px;
+                border-right-color: transparent;
+                border-bottom-color: transparent;
+            }
+        }
     }
     &--miner{
         border-top-right-radius: 12px;
@@ -76,6 +79,9 @@
         &::before{
             top: auto;
             bottom: 40px;
+            right: -18px;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
             @include breakpoint(large down){
                 bottom: 30px;
             }
@@ -89,6 +95,66 @@
             border-top-right-radius: 12px;
         }
         @extend %link;
+    }
+    &--hotel{
+        z-index: 1006;
+        padding: 20px;
+        width: 286px;
+        @include breakpoint(small down){
+            left: 50% !important;
+            transform: translateX(-50%);
+            &::before {
+                display: none;
+            }
+        }
+        &::after{
+            border-top-right-radius: 12px;
+        }
+        &.has-alignment-left{
+            &::before{
+                left: 35px;
+                border-right-color: transparent;
+            }
+        }
+        &.has-alignment-right, &.has-position-left{
+            &::before{
+                right: 35px;
+                border-left-color: transparent;
+            }
+        }
+        &.has-position-top{
+            &::before{
+                top: auto;
+                bottom: -18px;
+                border-bottom-color: transparent;
+            }
+        }
+        &.has-alignment-center::before{
+            border-left-color: transparent;
+            left: calc(50% + 9px);
+        }
+        &.has-position-bottom, &.has-alignment-top{
+            &::before{
+                top: -18px;
+                border-top-color: transparent;
+            }
+        }
+        .dropdown{
+            &_header{
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+            &_text{
+                font-size: 14px;
+                letter-spacing: 0.28px;
+                line-height: 1.4;
+                margin-bottom: 20px;
+            }
+        }
+        .button{
+            float: right;
+        }
     }
     &.is-open{
         // display: block;
