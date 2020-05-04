@@ -76,6 +76,13 @@
         // @include breakpoint(small down){
         //     width: calc(100vw - 30px);
         // }
+        &.mapOpened{
+            z-index: 1006;
+            opacity: 0;
+        }
+        &.mapReady.is-open{
+            opacity: 1;
+        }
         &::before{
             top: auto;
             bottom: 40px;
@@ -110,7 +117,7 @@
         &::after{
             border-top-right-radius: 12px;
         }
-        &.has-alignment-left{
+        &.has-alignment-left, &.has-position-right{
             &::before{
                 left: 35px;
                 border-right-color: transparent;

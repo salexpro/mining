@@ -36,6 +36,7 @@
         visibility: hidden;
         transition: opacity 300ms, visibility 300ms !important;
         padding: 35px 0;
+        // z-index: 0;
         // backdrop-filter: blur(4px);
         &[style]:not([style*='none']) {
             opacity: 1 !important;
@@ -428,10 +429,11 @@
         }
         &.large {
             max-width: 906px;
+            width: 90%;
             @include breakpoint(small down) {
-                width: 100%;
                 // top: 0 !important;
                 height: 100%;
+                width: 100%;
             }
         }
         .reveal_header {

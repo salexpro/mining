@@ -104,22 +104,51 @@ $(window).on('load', () => {
 
         .to('.footer .container', { y: 0, duration: 2, ease: 'expo.out' }, 2)
 
+    let minerInterval;
+
+    const stopCarousel = () => {
+        clearInterval(minerInterval);
+        minerInterval = false;
+    }
+
     setTimeout(() => {
-        minerHint(hints[0], 0);
+        if (!location.hash.includes('map')){
+            minerHint(hints[0], 0);
+            minerInterval = setInterval(nextHint, 30000);
+        }
+    }, (tlDuration + 3.5) * 1000);
 
-        $(!Foundation.MediaQuery.is('large') ? '.map_miner' : '.map_miner_g').click(e => {
-            e.stopPropagation();
-            nextHint()
-            clearInterval(minerInterval);
-            minerInterval = false;
+    $('#minerPopup .dropdown_close').click(() => stopCarousel())
+
+    $(!Foundation.MediaQuery.is('large') ? '.map_miner' : '.map_miner_g').click(e => {
+        e.stopPropagation();
+        nextHint()
+        stopCarousel()
+    })
+
+    const mapMiner = () => {
+        stopCarousel();
+        console.log('stopped')
+        $('.map_miner, #minerPopup').addClass('mapOpened')
+        setTimeout(() => {
+            $('.map_miner').addClass('mapReady')
+        }, 300);
+        setTimeout(() => {
+            minerHint(hints[1], 0);
+            $('#minerPopup').addClass('mapReady')
+        }, 1000);
+    }
+
+    if (location.hash.includes('map')) mapMiner();
+
+    $('#map')
+        .on('closeme.zf.reveal', () => mapMiner())
+        .on('closed.zf.reveal', () => {
+            // $('.map_miner').removeClass('mapOpened mapReady')
+            $('.map_miner, #minerPopup').removeClass('mapOpened mapReady')
+            $('#minerPopup').removeClass('mapReady')
+            setTimeout(() => {
+                $('#minerPopup').removeClass('mapOpened')
+            }, 300);
         })
-
-        let minerInterval = setInterval(nextHint, 30000);
-
-        $('#minerPopup .dropdown_close').click(() => {
-            clearInterval(minerInterval);
-            minerInterval = false;
-        })
-        
-    }, (tlDuration + 3.5) * 1000);    
 })
