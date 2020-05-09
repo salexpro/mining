@@ -116,7 +116,7 @@ $(window).on('load', () => {
             minerHint(hints[0], 0);
             minerInterval = setInterval(nextHint, 30000);
         }
-    }, (tlDuration + 3.5) * 1000);
+    }, (tlDuration + 2) * 1000);
 
     $('#minerPopup .dropdown_close').click(() => stopCarousel())
 
