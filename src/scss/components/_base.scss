@@ -42,8 +42,10 @@ body{
 
 // Styled scrollbar
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    @include breakpoint(large){
+        width: 5px;
+        height: 5px;
+    }
 }
 ::-webkit-scrollbar-thumb {
     background: $primary-color;
@@ -108,6 +110,14 @@ a{
 
 svg{
     display: block;
+}
+
+dl{
+    line-height: 1.4;
+}
+
+dd{
+    margin-bottom: 20px;
 }
 
 %link{

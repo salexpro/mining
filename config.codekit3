@@ -52,17 +52,6 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/bg_top.jpg": {
-		"ft": 16384,
-		"iS": 3268,
-		"jF": 2,
-		"oA": 0,
-		"oAP": "/docs/bg_top.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"/build.zip": {
 		"cB": 0,
 		"ft": 8192,
@@ -871,6 +860,182 @@
 		"plM": 1102195974143,
 		"prP": 0
 		},
+	"/src/assets/img/pools/pplns.png": {
+		"ft": 32768,
+		"iS": 119334,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/pplns.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/pplns@2x.png": {
+		"ft": 32768,
+		"iS": 373259,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/pplns@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/pps.png": {
+		"ft": 32768,
+		"iS": 118326,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/pps.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/pps@2x.png": {
+		"ft": 32768,
+		"iS": 374948,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/pps@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/prop.png": {
+		"ft": 32768,
+		"iS": 130090,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/prop.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/prop@2x.png": {
+		"ft": 32768,
+		"iS": 427741,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/prop@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/steps/1.png": {
+		"ft": 32768,
+		"iS": 15248,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/steps/1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/steps/1@2x.png": {
+		"ft": 32768,
+		"iS": 42565,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/steps/1@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/steps/2.png": {
+		"ft": 32768,
+		"iS": 62996,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/steps/2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/steps/2@2x.png": {
+		"ft": 32768,
+		"iS": 179540,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/steps/2@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/steps/3.png": {
+		"ft": 32768,
+		"iS": 43001,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/steps/3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/steps/3@2x.png": {
+		"ft": 32768,
+		"iS": 120561,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/steps/3@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/steps/4.png": {
+		"ft": 32768,
+		"iS": 50602,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/steps/4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/steps/4@2x.png": {
+		"ft": 32768,
+		"iS": 138771,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/steps/4@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/steps/5.png": {
+		"ft": 32768,
+		"iS": 39834,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/steps/5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/pools/steps/5@2x.png": {
+		"ft": 32768,
+		"iS": 108809,
+		"oA": 0,
+		"oAP": "/docs/assets/img/pools/steps/5@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/popup/armenia.png": {
 		"ft": 32768,
 		"iS": 53981,
@@ -975,6 +1140,50 @@
 		"iS": 80425,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/differences@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/distribution.png": {
+		"ft": 32768,
+		"iS": 39631,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/distribution.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/distribution@2x.png": {
+		"ft": 32768,
+		"iS": 90226,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/distribution@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/distribution_mobile.png": {
+		"ft": 32768,
+		"iS": 19870,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/distribution_mobile.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/distribution_mobile@2x.png": {
+		"ft": 32768,
+		"iS": 47174,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/distribution_mobile@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1331,6 +1540,116 @@
 		"plM": 1103269715967,
 		"prP": 0
 		},
+	"/src/assets/img/worker/1.png": {
+		"ft": 32768,
+		"iS": 77383,
+		"oA": 0,
+		"oAP": "/docs/assets/img/worker/1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/worker/1@2x.png": {
+		"ft": 32768,
+		"iS": 234539,
+		"oA": 0,
+		"oAP": "/docs/assets/img/worker/1@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/worker/2.png": {
+		"ft": 32768,
+		"iS": 120800,
+		"oA": 0,
+		"oAP": "/docs/assets/img/worker/2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/worker/2@2x.png": {
+		"ft": 32768,
+		"iS": 371537,
+		"oA": 0,
+		"oAP": "/docs/assets/img/worker/2@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/worker/3.png": {
+		"ft": 32768,
+		"iS": 142500,
+		"oA": 0,
+		"oAP": "/docs/assets/img/worker/3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/worker/3@2x.png": {
+		"ft": 32768,
+		"iS": 473522,
+		"oA": 0,
+		"oAP": "/docs/assets/img/worker/3@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/worker/4.png": {
+		"ft": 32768,
+		"iS": 54962,
+		"oA": 0,
+		"oAP": "/docs/assets/img/worker/4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/worker/4@2x.png": {
+		"ft": 32768,
+		"iS": 177918,
+		"oA": 0,
+		"oAP": "/docs/assets/img/worker/4@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/worker/5.png": {
+		"ft": 32768,
+		"iS": 58615,
+		"oA": 0,
+		"oAP": "/docs/assets/img/worker/5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/worker/5@2x.png": {
+		"ft": 32768,
+		"iS": 170780,
+		"oA": 0,
+		"oAP": "/docs/assets/img/worker/5@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
@@ -1598,6 +1917,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/items/_miningPools.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/_miningPools.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/items/_whatToMine.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1818,7 +2147,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 610253383.79483294
+	"lastBuiltDate": 610693296.01150596
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
