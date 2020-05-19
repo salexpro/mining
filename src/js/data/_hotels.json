@@ -156,5 +156,25 @@
         "name": "IBMM",
         "descr": "Майнинг-отель (3,5 рубля за кВт/час)",
         "link": "https://ibmm.ru/"
+    },
+    "bit-place": {
+        "name": "Bit-place",
+        "descr": "Хостинг (3,4 руб/кВт)",
+        "link": "https://bit-place.ru/"
+    },
+    "intelion_tula": {
+        "name": "Intelion Mining",
+        "descr": "Майнинг-отель (от 2,99 рубля за кВт/час), ремонт, продажа оборудования",
+        "link": "https://intelionmine.ru"
+    },
+    "intelion_tver": {
+        "name": "Intelion Mining",
+        "descr": "Майнинг-отель (от 2,95 рубля за кВт/час), ремонт, продажа оборудования",
+        "link": "https://intelionmine.ru"
+    },
+    "minery": {
+        "name": "Minery",
+        "descr": "Майнинг-отель (от 3,2 рубля за кВт/час), ремонт",
+        "link": "https://minery.io"
     }
 }

@@ -178,7 +178,10 @@
         },
         {
             title: 'Финиш! Выводим в фиат,<br>инвестируем, трейдим!',
-            // link: '#',
+            link: '#finish',
+            attrs: {
+                'data-open': 'finish'
+            },
             position: {
                 h: 'left',
                 v: 'top'
@@ -190,23 +193,24 @@
             sub: [
                 {
                     title: 'Продаем и выводим в фиат',
-                    link: '#', 
+                    link: '#sell-and-withdraw',
                 },
                 {
                     title: 'Торгуем',
-                    link: '#', 
+                    link: '#trade', 
                 },
                 {
                     title: 'Храним',
-                    link: '#', 
+                    link: '#store', 
                 },
                 {
                     title: 'Выводы',
-                    link: '#', 
+                    link: '#conclusions', 
                 },
             ]
         },
     ]
+
 mixin menu()
     ul.menu.vertical.accordion-menu&attributes(attributes)
         each item in menu

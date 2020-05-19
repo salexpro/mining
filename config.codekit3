@@ -759,6 +759,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/map_hostel_points-add.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/docs/assets/img/map_hostel_points-add.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 65859028516863,
+		"prP": 1
+		},
 	"/src/assets/img/map_hostel_points.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -1052,6 +1062,28 @@
 		"iS": 193814,
 		"oA": 0,
 		"oAP": "/docs/assets/img/popup/armenia@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/buy_sell.png": {
+		"ft": 32768,
+		"iS": 45381,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/buy_sell.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/popup/buy_sell@2x.png": {
+		"ft": 32768,
+		"iS": 149531,
+		"oA": 0,
+		"oAP": "/docs/assets/img/popup/buy_sell@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1520,6 +1552,116 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/img/sell/1.png": {
+		"ft": 32768,
+		"iS": 109111,
+		"oA": 0,
+		"oAP": "/docs/assets/img/sell/1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/sell/1@2x.png": {
+		"ft": 32768,
+		"iS": 336485,
+		"oA": 0,
+		"oAP": "/docs/assets/img/sell/1@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/sell/2.png": {
+		"ft": 32768,
+		"iS": 107687,
+		"oA": 0,
+		"oAP": "/docs/assets/img/sell/2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/sell/2@2x.png": {
+		"ft": 32768,
+		"iS": 296835,
+		"oA": 0,
+		"oAP": "/docs/assets/img/sell/2@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/sell/3.png": {
+		"ft": 32768,
+		"iS": 79175,
+		"oA": 0,
+		"oAP": "/docs/assets/img/sell/3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/sell/3@2x.png": {
+		"ft": 32768,
+		"iS": 190782,
+		"oA": 0,
+		"oAP": "/docs/assets/img/sell/3@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/store/1.png": {
+		"ft": 32768,
+		"iS": 54449,
+		"oA": 0,
+		"oAP": "/docs/assets/img/store/1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/store/1@2x.png": {
+		"ft": 32768,
+		"iS": 167713,
+		"oA": 0,
+		"oAP": "/docs/assets/img/store/1@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/store/2.png": {
+		"ft": 32768,
+		"iS": 63950,
+		"oA": 0,
+		"oAP": "/docs/assets/img/store/2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/store/2@2x.png": {
+		"ft": 32768,
+		"iS": 214833,
+		"oA": 0,
+		"oAP": "/docs/assets/img/store/2@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/img/wave.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -1887,6 +2029,16 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/items/_finish.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/docs/_finish.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/items/_firstSteps.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -2147,7 +2299,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/android-chrome-512x512.png",
 	"iconImageWasSetByUser": 1,
-	"lastBuiltDate": 610755075.85577404
+	"lastBuiltDate": 611522851.51372802
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

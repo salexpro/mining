@@ -37,12 +37,6 @@
         z-index: 3;
         padding-right: 24px;
         opacity: 0;
-        &::before{
-            content: '“';
-        }
-        &::after{
-            content: '”';
-        }
         @include breakpoint(large down){
             margin-top: 10px;
             padding: 0 12px;
@@ -282,7 +276,7 @@
             }
         }
     }
-    &_countdown{
+    /* &_countdown{
         position: absolute;
         top: 50px;
         right: 10.6%;
@@ -314,5 +308,5 @@
         }
         // right: 50%;
         // transform: translateX(50%);
-    }
+    } */
 }

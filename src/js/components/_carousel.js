@@ -16,9 +16,6 @@ $('.footer_carousel').owlCarousel({
         },
         640: {
             items: 3
-        },
-        1024: {
-            items: 4
         }
     }
 })
